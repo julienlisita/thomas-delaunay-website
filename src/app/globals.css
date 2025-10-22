@@ -2,24 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* === CCS Palette & Tokens === */
 :root {
-  /* Neutral scale (minimal) */
-  --neutral-100: #f5f5f5; /* bg */
-  --neutral-300: #e0e0e0; /* borders / subtle surfaces */
-  --neutral-600: #6b7280; /* primary / accents */
-  --neutral-900: #111827; /* main text */
+  /* Named colors (direct from brand palette) */
+  --color-dark: #2E4057;  /* deep slate blue - stability, structure */
+  --color-blue: #5BA3C8;  /* azur blue - energy, freshness */
+  --color-mint: #A8D5BA;  /* mint green - balance, well-being */
+  --color-sand: #F6F3EE;  /* sand beige - light background */
+  --color-coral: #F37B63; /* coral - warmth, human energy */
+  --color-night: #1C2A38; /* night blue - strong contrast */
+  --color-light: #E4EBF0; /* pale blue-grey - soft surfaces */
 
   /* Functional tokens */
-  --color-primary: var(--neutral-600);
-  --color-secondary: #9ca3af; /* optionnel, texte secondaire */
-  --color-bg: var(--neutral-100);
-  --color-surface: #ffffff;
-  --color-border: var(--neutral-300);
-  --color-text: var(--neutral-900);
-  --color-muted: var(--color-secondary);
+  --color-primary: var(--color-coral); /* Main accent color (CTAs, links, hover states) */
+  --color-secondary: var(--color-blue); /* Secondary accent (soft hover, icons, subtle details) */
+  --color-bg: var(--color-sand); /* Global background color */
+  --color-surface: var(--color-light); /* Surfaces for cards or secondary sections */
+  --color-border: var(--color-blue); /* Soft blue-tinted borders */
+  --color-text: var(--color-dark); /* Main text color (high contrast on light background) */
+  --color-muted: var(--color-mint); /* Muted elements: badges, quotes, highlights */
 
-  /* Layout */
-  --header-height: 56px;
+  /* Strong elements */
+  --color-heading: var(--color-night); /* Headings (deeper tone for visual anchor) */
+  --color-footer-bg: var(--color-dark); /* Footer background color */
+  --color-footer-text: var(--color-sand); /* Footer text color */
+
+  /* Layout tokens */
+  --header-height: 56px; /* h-14 */
 }
 
 @media (min-width: 640px) {
