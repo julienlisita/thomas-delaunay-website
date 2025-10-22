@@ -62,12 +62,12 @@ Le projet sera accessible sur **http://localhost:3000**.
 
 ## 🧰 Commandes utiles
 
-| Commande | Description |
-|-----------|-------------|
-| `npm run dev` | Lance le serveur de développement |
-| `npm run build` | Génère la version de production |
-| `npm start` | Démarre le serveur en production |
-| `npm run lint` | Analyse le code avec ESLint |
+| Commande        | Description                       |
+| --------------- | --------------------------------- |
+| `npm run dev`   | Lance le serveur de développement |
+| `npm run build` | Génère la version de production   |
+| `npm start`     | Démarre le serveur en production  |
+| `npm run lint`  | Analyse le code avec ESLint       |
 
 ---
 
@@ -82,4 +82,3 @@ Il a été conçu dans le cadre d’un projet web professionnel pour **Thomas De
 
 **Julien Lisita**  
 [Portfolio](https://julienlisita.com) – [LinkedIn](https://linkedin.com/in/julienlisita)
-

@@ -1,28 +1,37 @@
-/* src/components/widgets/FeatureCard.ccs */
+/* src/components/widgets/FeatureCard.css */
 
 /* Base card */
 .feature-card {
-  @apply rounded-xl shadow-sm transition overflow-hidden;
-  background-color: var(--color-bg); /* crème */
-  border: 1px solid var(--color-bg); /* fix */
+  @apply transition overflow-hidden;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--card-text);
+}
+.feature-card:hover {
+  box-shadow: var(--card-shadow-hover);
 }
 
 /* Variantes */
 .feature-card--outlined {
-  background-color: #ffffff;
-  border: 2px solid var(--color-primary);
+  background-color: var(--card-outlined-bg);
+  border: 2px solid var(--card-outlined-border);
 }
 
 .feature-card--gradient {
-  color: #ffffff;
+  color: var(--card-gradient-fg);
   border: none;
-  /* gradient is applied inline from props */
+  /* gradient appliqué inline via props;
+     fallback si non fourni : */
+  background-image: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-end));
 }
 
 /* Header (pas de text-center ici, géré par TS) */
 .feature-card__header {
   @apply flex flex-col space-y-2 p-4;
-  color: #ffffff; /* quand headerColor/gradient */
+  background: var(--card-header-bg);
+  color: var(--card-header-fg); /* quand headerColor/gradient */
 }
 
 /* Body */
@@ -35,28 +44,33 @@
   @apply inline-flex items-center;
 }
 .feature-card__icon-inner {
-  @apply w-10 h-10;
-  color: transparent;
+  width: var(--card-icon-size);
+  height: var(--card-icon-size);
+  color: var(--card-icon-fg);
 }
+.feature-card--gradient .feature-card__icon-inner,
 .feature-card__header .feature-card__icon-inner {
-  color: inherit; /* si header coloré */
+  color: currentColor; /* hérite du header/gradient */
 }
 
 /* Title */
 .feature-card__title {
   @apply text-base sm:text-lg font-semibold;
-  color: black;
+  color: var(--card-title);
 }
 .feature-card--gradient .feature-card__title,
 .feature-card__header .feature-card__title {
-  color: #ffffff;
+  color: var(--card-header-fg);
 }
 
 /* Description */
 .feature-card__desc {
   @apply text-sm leading-relaxed;
-  color: #4b5563; /* gray-600 */
+  color: var(--card-text);
+  opacity: var(--card-muted-opacity); /* remplace gray-600 */
 }
-.feature-card--gradient .feature-card__desc {
-  color: #ffffff;
+.feature-card--gradient .feature-card__desc,
+.feature-card__header .feature-card__desc {
+  color: var(--card-header-fg);
+  opacity: 0.95;
 }

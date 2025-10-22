@@ -5,13 +5,13 @@
 /* === CCS Palette & Tokens === */
 :root {
   /* Named colors (direct from brand palette) */
-  --color-dark: #2E4057;  /* deep slate blue - stability, structure */
-  --color-blue: #5BA3C8;  /* azur blue - energy, freshness */
-  --color-mint: #A8D5BA;  /* mint green - balance, well-being */
-  --color-sand: #F6F3EE;  /* sand beige - light background */
-  --color-coral: #F37B63; /* coral - warmth, human energy */
-  --color-night: #1C2A38; /* night blue - strong contrast */
-  --color-light: #E4EBF0; /* pale blue-grey - soft surfaces */
+  --color-dark: #2e4057; /* deep slate blue - stability, structure */
+  --color-blue: #5ba3c8; /* azur blue - energy, freshness */
+  --color-mint: #a8d5ba; /* mint green - balance, well-being */
+  --color-sand: #f6f3ee; /* sand beige - light background */
+  --color-coral: #f37b63; /* coral - warmth, human energy */
+  --color-night: #1c2a38; /* night blue - strong contrast */
+  --color-light: #e4ebf0; /* pale blue-grey - soft surfaces */
 
   /* Functional tokens */
   --color-primary: var(--color-coral); /* Main accent color (CTAs, links, hover states) */
@@ -24,11 +24,90 @@
 
   /* Strong elements */
   --color-heading: var(--color-night); /* Headings (deeper tone for visual anchor) */
-  --color-footer-bg: var(--color-dark); /* Footer background color */
-  --color-footer-text: var(--color-sand); /* Footer text color */
+
+  /* Header (sticky top navigation bar) */
+  --color-header-bg: rgba(246, 243, 238, 0.85); /* sand with transparency */
+  --color-header-bg-blur: blur(6px); /* backdrop blur for “glass” effect */
+  --color-header-text: var(--color-dark); /* main text color */
+  --color-header-hover: var(--color-blue); /* link hover */
+  --color-header-active: var(--color-coral); /* current page underline or active state */
+  --color-header-border: rgba(46, 64, 87, 0.08); /* thin subtle border line (optional) */
+  --color-header-icon: var(--color-dark); /* burger/menu icons */
+  --color-header-mobile-hover: var(--color-light); /* background for mobile links hover */
+
+  /* Footer (bottom site section) */
+  --color-footer-bg: var(--color-dark); /* main footer background */
+  --color-footer-text: var(--color-sand); /* text color */
+  --color-footer-link-hover: var(--color-blue); /* link hover color */
+  --color-footer-border: rgba(255, 255, 255, 0.1); /* top border line */
+  --color-footer-icon: var(--color-sand); /* social icons */
+  --color-footer-icon-hover: var(--color-coral); /* hover accent for icons */
+
+  /* Primary button */
+  --btn-primary-bg: var(--color-coral);
+  --btn-primary-text: #ffffff;
+  --btn-primary-border: var(--color-coral);
+  --btn-primary-hover-bg: color-mix(in oklab, var(--color-coral) 92%, white); /* slightly lighter */
+  --btn-primary-hover-text: #ffffff;
+  --btn-primary-hover-border: color-mix(in oklab, var(--color-coral) 88%, white);
+  --btn-primary-focus-ring: var(--color-blue);
+
+  /* Secondary button */
+  --btn-secondary-bg: var(--color-blue);
+  --btn-secondary-text: #ffffff;
+  --btn-secondary-border: var(--color-coral);
+  --btn-secondary-hover-bg: color-mix(
+    in oklab,
+    var(--color-coral) 90%,
+    white
+  ); /* slightly lighter */
+  --btn-secondary-hover-text: #ffffff;
+  --btn-secondary-hover-border: color-mix(in oklab, var(--color-blue) 85%, white);
+  --btn-secondary-focus-ring: var(--color-coral);
+
+  /* —— CTA section —— */
+  --color-cta-bg: var(--color-secondary); /* bleu doux */
+  --color-cta-fg: #ffffff;
+
+  /* —— Section titles —— */
+  --color-section-title: var(--color-heading);
+
+  /* —— Section titles —— */
+  --color-subtitle: var(--color-heading);
+
+  /* —— Eyebrow —— */
+  --color-eyebrow: var(--color-heading);
 
   /* Layout tokens */
   --header-height: 56px; /* h-14 */
+
+  /* —— FeatureCard —— */
+  --card-radius: 0.75rem; /* ≈ rounded-xl */
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  --card-bg: var(--color-surface); /* fond carte par défaut */
+  --card-border: var(--color-light); /* bordure discrète */
+  --card-text: var(--color-text); /* texte principal */
+  --card-title: var(--color-section-title); /* titre carte */
+  --card-muted-opacity: 0.75; /* desc / textes adoucis */
+
+  /* Header coloré (variant with-header) */
+  --card-header-bg: var(--color-blue); /* header par défaut */
+  --card-header-fg: #ffffff; /* texte sur header */
+
+  /* Variant outlined */
+  --card-outlined-bg: #ffffff;
+  --card-outlined-border: var(--color-primary);
+
+  /* Variant gradient (fallback si pas de props) */
+  --card-gradient-fg: #ffffff;
+  --card-gradient-start: var(--color-blue);
+  --card-gradient-end: var(--color-coral);
+
+  /* Icônes */
+  --card-icon-size: 2.5rem; /* w-10 h-10 */
+  --card-icon-fg: var(--color-blue);
 }
 
 @media (min-width: 640px) {
