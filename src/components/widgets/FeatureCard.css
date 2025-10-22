@@ -1,0 +1,62 @@
+/* src/components/widgets/FeatureCard.ccs */
+
+/* Base card */
+.feature-card {
+  @apply rounded-xl shadow-sm transition overflow-hidden;
+  background-color: var(--color-bg); /* crème */
+  border: 1px solid var(--color-bg); /* fix */
+}
+
+/* Variantes */
+.feature-card--outlined {
+  background-color: #ffffff;
+  border: 2px solid var(--color-primary);
+}
+
+.feature-card--gradient {
+  color: #ffffff;
+  border: none;
+  /* gradient is applied inline from props */
+}
+
+/* Header (pas de text-center ici, géré par TS) */
+.feature-card__header {
+  @apply flex flex-col space-y-2 p-4;
+  color: #ffffff; /* quand headerColor/gradient */
+}
+
+/* Body */
+.feature-card__body {
+  @apply flex flex-col p-6 pt-8 gap-2;
+}
+
+/* Icon */
+.feature-card__icon {
+  @apply inline-flex items-center;
+}
+.feature-card__icon-inner {
+  @apply w-10 h-10;
+  color: transparent;
+}
+.feature-card__header .feature-card__icon-inner {
+  color: inherit; /* si header coloré */
+}
+
+/* Title */
+.feature-card__title {
+  @apply text-base sm:text-lg font-semibold;
+  color: black;
+}
+.feature-card--gradient .feature-card__title,
+.feature-card__header .feature-card__title {
+  color: #ffffff;
+}
+
+/* Description */
+.feature-card__desc {
+  @apply text-sm leading-relaxed;
+  color: #4b5563; /* gray-600 */
+}
+.feature-card--gradient .feature-card__desc {
+  color: #ffffff;
+}
