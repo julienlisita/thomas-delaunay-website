@@ -55,10 +55,10 @@
   /* Secondary button */
   --btn-secondary-bg: var(--color-blue);
   --btn-secondary-text: #ffffff;
-  --btn-secondary-border: var(--color-coral);
+  --btn-secondary-border: var(--color-blue);
   --btn-secondary-hover-bg: color-mix(
     in oklab,
-    var(--color-coral) 90%,
+    var(--color-blue) 90%,
     white
   ); /* slightly lighter */
   --btn-secondary-hover-text: #ffffff;
