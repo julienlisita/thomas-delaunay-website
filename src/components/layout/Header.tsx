@@ -86,7 +86,6 @@ export default function Header() {
           src="/images/logo.png"
           alt="Logo du site"
           fill
-          sizes="(max-width: 768px) 40px, (max-width: 1024px) 48px, 56px"
           style={{ objectFit: 'contain' }}
           priority
         />

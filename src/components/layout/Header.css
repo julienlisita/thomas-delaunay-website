@@ -9,7 +9,7 @@
 }
 
 .logo-wrapper {
-  @apply relative h-10 w-10 sm:h-12 sm:w-12;
+  @apply relative h-8 sm:h-10 lg:h-12 flex-shrink-0 aspect-[2.85/1];
 }
 
 .main-nav {
