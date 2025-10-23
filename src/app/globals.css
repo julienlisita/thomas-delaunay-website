@@ -65,6 +65,16 @@
   --btn-secondary-hover-border: color-mix(in oklab, var(--color-blue) 85%, white);
   --btn-secondary-focus-ring: var(--color-coral);
 
+  /* === GlassLight button === */
+  /* Variante pour fonds sombres ou images Hero */
+  --btn-glasslight-bg: rgba(255, 255, 255, 0.1); /* voile translucide */
+  --btn-glasslight-text: #ffffff; /* texte blanc */
+  --btn-glasslight-border: rgba(255, 255, 255, 0.3); /* bordure douce */
+  --btn-glasslight-hover-bg: rgba(255, 255, 255, 0.2); /* plus opaque au survol */
+  --btn-glasslight-hover-text: #ffffff;
+  --btn-glasslight-hover-border: rgba(255, 255, 255, 0.4);
+  --btn-glasslight-focus-ring: rgba(255, 255, 255, 0.5); /* halo blanc doux */
+
   /* —— CTA section —— */
   --color-cta-bg: var(--color-secondary); /* bleu doux */
   --color-cta-fg: #ffffff;

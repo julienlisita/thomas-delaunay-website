@@ -40,7 +40,7 @@ export default function Hero() {
           <Button href="/contact" variant="primary">
             Me contacter
           </Button>
-          <Button href="/coaching" variant="secondary">
+          <Button href="/coaching" variant="glasslight">
             Programmes
           </Button>
         </div>

@@ -30,6 +30,26 @@
   border: 2px solid var(--btn-secondary-hover-border);
 }
 
+.btn.glasslight {
+  background-color: var(--btn-glasslight-bg);
+  color: var(--btn-glasslight-text);
+  border: 1px solid var(--btn-glasslight-border);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+}
+
+.btn.glasslight:hover {
+  background-color: var(--btn-glasslight-hover-bg);
+  color: var(--btn-glasslight-hover-text);
+  border-color: var(--btn-glasslight-hover-border);
+}
+
+.btn.glasslight:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-glasslight-focus-ring);
+}
+
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
