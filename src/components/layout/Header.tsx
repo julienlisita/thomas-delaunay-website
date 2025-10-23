@@ -12,7 +12,9 @@ import './Header.css';
 const NAV_ITEMS = [
   { href: '/', label: 'Accueil' },
   { href: '/about', label: 'À propos' },
+  { href: '/coaching', label: 'Coaching' },
   { href: '/testimonials', label: 'Témoignages' },
+  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
 
