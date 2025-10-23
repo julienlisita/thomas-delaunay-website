@@ -16,11 +16,13 @@ export default function About() {
       />
       <ValuesSection />
       <Cta
-        title="Envie d’échanger avec nous ?"
-        description="Notre équipe est disponible pour répondre à vos questions et discuter de vos besoins."
+        title="Envie d’un accompagnement à votre rythme ?"
+        description="Une méthode douce et progressive, à domicile, en extérieur ou à distance."
         align="left"
-        primaryLabel="Nous contacter"
-        primaryHref="/contact"
+        primaryLabel="Découvrir le coaching"
+        primaryHref="/coaching"
+        secondaryLabel="Me contacter"
+        secondaryHref="/contact"
       />
     </div>
   );

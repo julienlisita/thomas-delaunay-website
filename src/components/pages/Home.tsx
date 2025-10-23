@@ -14,11 +14,13 @@ export default function Home() {
       <ServicesFeaturesIntro />
       <TestimonialsSectionHomeServer />
       <Cta
-        title="Prêt à en savoir plus ?"
-        description="Contactez-nous dès aujourd’hui pour découvrir comment nous pouvons vous accompagner."
+        title="Prêt à reprendre le mouvement ?"
+        description="Je vous accompagne pas à pas, à votre rythme — pour retrouver énergie, équilibre et confiance."
         align="left"
-        primaryLabel="Nous contacter"
-        primaryHref="/contact"
+        primaryLabel="Découvrir l’approche"
+        primaryHref="/coaching"
+        secondaryLabel="En savoir plus sur Thomas"
+        secondaryHref="/about"
       />
     </div>
   );

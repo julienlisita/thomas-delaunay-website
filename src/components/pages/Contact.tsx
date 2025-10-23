@@ -4,6 +4,7 @@ import HeroIntro from '../section/HeroIntro';
 import { Mail } from 'lucide-react';
 import ContactFormSection from '../section/ContactFormSection';
 import ContactInfoSection from '../section/ContactInfoSection';
+import Cta from '../ui/Cta';
 
 export default function Contact() {
   return (
@@ -31,6 +32,13 @@ export default function Contact() {
         asidePosition="right"
       />
       <ContactInfoSection />
+      <Cta
+        title="Envie d’en savoir plus avant de commencer ?"
+        description="Découvrez comment se déroulent les séances et les différents formats de coaching."
+        align="left"
+        primaryLabel="Découvrir le coaching"
+        primaryHref="/coaching"
+      />
     </div>
   );
 }

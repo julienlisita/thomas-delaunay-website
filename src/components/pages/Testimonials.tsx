@@ -18,11 +18,11 @@ export default function TestimonialsPageView() {
       />
       <TestimonialsSectionServer />
       <Cta
-        title="Faites partie de nos clients satisfaits"
-        description="Rejoignez ceux qui nous font déjà confiance. Contactez-nous pour commencer l’aventure."
+        title="Des parcours réels, des progrès durables"
+        description="Découvrez comment chacun a avancé à son rythme — sans pression, avec plaisir."
         align="left"
-        primaryLabel="Nous contacter"
-        primaryHref="/contact"
+        primaryLabel="Lire mes conseils"
+        primaryHref="/blog"
       />
     </div>
   );
