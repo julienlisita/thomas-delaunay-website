@@ -3,11 +3,11 @@
 import Testimonials from '@/components/pages/Testimonials';
 
 export const metadata = {
-  title: 'Témoignages – Avis de nos clients',
+  title: 'Témoignages — Parcours et résultats',
   description:
-    'Lisez les témoignages et retours d’expérience de nos clients satisfaits, preuve de notre engagement et de notre qualité de service.',
+    'Des retours d’expérience concrets : comment mes clients ont retrouvé confiance, énergie et régularité, à leur rythme.',
   alternates: {
-    canonical: 'https://www.exemple.com/testimonials',
+    canonical: 'https://www.thomasdelaunay.fr/testimonials',
   },
 };
 

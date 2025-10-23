@@ -3,11 +3,11 @@
 import Imprint from '@/components/pages/legal/Imprint';
 
 export const metadata = {
-  title: 'Mentions légales – Nom entreprise',
+  title: 'Mentions légales — Thomas Delaunay Coaching',
   description:
-    'Informations légales concernant l’éditeur du site, l’hébergement et la propriété intellectuelle.',
+    'Toutes les informations légales du site Thomas Delaunay Coaching : éditeur, hébergeur, propriété intellectuelle et conditions d’utilisation.',
   alternates: {
-    canonical: 'https://www.exemple.com/legal/imprint',
+    canonical: 'https://www.thomasdelaunay.fr/legal/imprint',
   },
 };
 

@@ -3,11 +3,11 @@
 import About from '@/components/pages/About';
 
 export const metadata = {
-  title: 'À propos – Votre Nom',
+  title: 'À propos — Thomas Delaunay',
   description:
-    'En savoir plus sur notre entreprise, nos valeurs, et notre engagement envers nos clients.',
+    'Ancien nageur, passionné de surf, j’accompagne chacun à retrouver confiance, énergie et équilibre par une discipline douce et personnalisée.',
   alternates: {
-    canonical: 'https://www.exemple.com/about',
+    canonical: 'https://www.thomasdelaunay.fr/about',
   },
 };
 

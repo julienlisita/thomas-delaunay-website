@@ -3,11 +3,11 @@
 import Blog from '@/components/pages/Blog';
 
 export const metadata = {
-  title: 'À propos – Votre Nom',
+  title: 'Blog — Conseils & inspiration',
   description:
-    'En savoir plus sur notre entreprise, nos valeurs, et notre engagement envers nos clients.',
+    'Nutrition simple, mouvement, récupération, motivation : des articles pour prolonger votre progression au quotidien.',
   alternates: {
-    canonical: 'https://www.exemple.com/about',
+    canonical: 'https://www.thomasdelaunay.fr/blog',
   },
 };
 

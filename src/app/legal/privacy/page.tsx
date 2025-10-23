@@ -3,11 +3,11 @@
 import Privacy from '@/components/pages/legal/Policy';
 
 export const metadata = {
-  title: 'Politique de confidentialité – Nom entreprise',
+  title: 'Politique de confidentialité — Thomas Delaunay Coaching',
   description:
-    'Découvrez comment nous collectons, utilisons et protégeons vos données personnelles.',
+    'Découvrez comment Thomas Delaunay Coaching collecte, utilise et protège vos données personnelles conformément au RGPD.',
   alternates: {
-    canonical: 'https://www.exemple.com/legal/privacy',
+    canonical: 'https://www.thomasdelaunay.fr/legal/privacy',
   },
 };
 

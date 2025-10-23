@@ -3,11 +3,11 @@
 import Coaching from '@/components/pages/Coaching';
 
 export const metadata = {
-  title: 'À propos – Votre Nom',
+  title: 'Coaching — Approche & programmes',
   description:
-    'En savoir plus sur notre entreprise, nos valeurs, et notre engagement envers nos clients.',
+    'Force douce, cardio bienveillant, nutrition simple, mobilité & prévention : une méthode complète et personnalisée pour progresser durablement.',
   alternates: {
-    canonical: 'https://www.exemple.com/about',
+    canonical: 'https://www.thomasdelaunay.fr/about',
   },
 };
 

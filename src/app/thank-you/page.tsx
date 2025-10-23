@@ -3,7 +3,7 @@
 import Button from '@/components/ui/Button';
 
 export const metadata = {
-  title: 'Message envoyé – Nom de la société',
+  title: 'Message envoyé – Thomas Delaunay Coaching',
 };
 
 export default function ThankYouPage() {

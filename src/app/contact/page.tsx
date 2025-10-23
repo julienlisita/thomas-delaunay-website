@@ -3,11 +3,11 @@
 import Contact from '@/components/pages/Contact';
 
 export const metadata = {
-  title: 'Contact – Nom entreprise',
+  title: 'Contact — Réserver une séance découverte',
   description:
-    'Besoin d’informations ou d’un devis ? Contactez-nous via notre formulaire ou par téléphone.',
+    'Expliquez vos objectifs : je vous réponds rapidement pour définir la meilleure façon d’avancer ensemble.',
   alternates: {
-    canonical: 'https://www.exemple.com/contact',
+    canonical: 'https://www.thomasdelaunay.fr/contact',
   },
 };
 

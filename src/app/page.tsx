@@ -3,11 +3,11 @@
 import Home from '@/components/pages/Home';
 
 export const metadata = {
-  title: 'Accueil – Nom entreprise',
+  title: 'Le sport à votre rythme',
   description:
-    'Bienvenue sur notre site vitrine. Découvrez nos services et notre expertise au service de votre activité.',
+    'Coach sportif & bien-être à Bordeaux. Un accompagnement humain et progressif pour retrouver forme, énergie et équilibre — sans pression, à votre rythme.',
   alternates: {
-    canonical: 'https://www.exemple.com/',
+    canonical: 'https://www.thomasdelaunay.fr/',
   },
 };
 
