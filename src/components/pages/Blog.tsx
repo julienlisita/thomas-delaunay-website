@@ -1,5 +1,6 @@
 // src/components/pages/Blog.tsx
 
+import { BookOpen } from 'lucide-react';
 import HeroIntro from '../section/HeroIntro';
 import Cta from '../ui/Cta';
 
@@ -7,8 +8,9 @@ export default function Blog() {
   return (
     <div>
       <HeroIntro
-        title="Blog"
-        subtitle="Découvrez mes articles sur le sport et la nutrition"
+        icon={<BookOpen size={40} />}
+        title="Conseils et inspiration"
+        subtitle="Articles sur la nutrition, l’équilibre et le bien-être — pour prolonger le coaching au quotidien."
         align="center"
       />
       <Cta

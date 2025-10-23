@@ -2,16 +2,16 @@
 
 import Cta from '../ui/Cta';
 import HeroIntro from '../section/HeroIntro';
-import { Users } from 'lucide-react';
+import { UserRound } from 'lucide-react';
 import ValuesSection from '../section/ValueSection';
 
 export default function About() {
   return (
     <div>
       <HeroIntro
-        icon={<Users size={40} />}
-        title="Qui sommes-nous ?"
-        subtitle="Découvrez notre équipe, nos valeurs et notre vision."
+        icon={<UserRound size={40} />}
+        title="Thomas Delaunay — Coach sportif et bien-être"
+        subtitle="Ancien nageur et passionné de surf, j’accompagne chacun à retrouver confiance, équilibre et énergie."
         align="center"
       />
       <ValuesSection />

@@ -1,6 +1,6 @@
 // src/components/pages/Testimonials.tsx
 
-import { MessageSquare } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import HeroIntro from '../section/HeroIntro';
 import TestimonialsSectionServer from '../section/TestimonialsSectionServer';
 import Cta from '../ui/Cta';
@@ -11,9 +11,9 @@ export default function TestimonialsPageView() {
   return (
     <div>
       <HeroIntro
-        icon={<MessageSquare size={40} />}
-        title="Témoignages"
-        subtitle="Ils partagent leur expérience et leur avis sur nos services."
+        icon={<MessageCircle size={40} />}
+        title="Des parcours inspirants"
+        subtitle="Découvrez les expériences et réussites de celles et ceux que j’ai accompagnés."
         align="center"
       />
       <TestimonialsSectionServer />

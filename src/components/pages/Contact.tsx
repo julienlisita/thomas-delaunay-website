@@ -11,8 +11,8 @@ export default function Contact() {
     <div>
       <HeroIntro
         icon={<Mail size={40} />}
-        title="Contactez-nous"
-        subtitle="Besoin d’informations ou d’un devis ? Nous sommes à votre écoute."
+        title="Contactez-moi"
+        subtitle="Expliquez-moi vos besoins ou vos objectifs — je vous réponds rapidement pour définir votre accompagnement."
         align="center"
       />
       <ContactFormSection

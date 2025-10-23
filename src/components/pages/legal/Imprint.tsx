@@ -1,11 +1,18 @@
 // src/components/pages/legal/Imprint.tsx
 
-import PageTitle from '@/components/ui/PageTitle';
+import HeroIntro from '@/components/section/HeroIntro';
+import { Scale } from 'lucide-react';
 
 export default function Imprint() {
   return (
-    <div className="container mx-auto px-4 py-10 space-y-4">
-      <PageTitle>Mentions légales</PageTitle>
+    <div>
+      <HeroIntro
+        icon={<Scale size={40} />}
+        title="Mentions légales"
+        subtitle="Informations légales concernant l’édition et l’hébergement du site de Thomas Delaunay coaching."
+        align="center"
+      />
+      <div className="container mx-auto px-4 py-10 space-y-4">
       <p className="text-gray-700">
         Ce site est édité par [Nom de l&apos;entreprise], situé à [Adresse complète].
       </p>
@@ -17,6 +24,7 @@ export default function Imprint() {
         Pour toute question concernant ces mentions, vous pouvez nous contacter via le formulaire de
         contact.
       </p>
+    </div>
     </div>
   );
 }

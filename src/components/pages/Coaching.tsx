@@ -1,5 +1,6 @@
 // src/components/pages/Coaching.tsx
 
+import { Dumbbell } from 'lucide-react';
 import HeroIntro from '../section/HeroIntro';
 import Cta from '../ui/Cta';
 
@@ -7,8 +8,9 @@ export default function Coaching() {
   return (
     <div>
       <HeroIntro
-        title="Coaching"
-        subtitle="Découvrez ma méthode et moyen mis en place"
+        icon={<Dumbbell size={40} />}
+        title="Le coaching à votre rythme"
+        subtitle="Force, cardio, nutrition, bien-être — une approche complète et personnalisée pour progresser durablement."
         align="center"
       />
       <Cta
