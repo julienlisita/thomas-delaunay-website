@@ -5,6 +5,7 @@ import { Mail } from 'lucide-react';
 import ContactFormSection from '../section/ContactFormSection';
 import ContactInfoSection from '../section/ContactInfoSection';
 import Cta from '../ui/Cta';
+import LocationSection from '../section/LocationSection';
 
 export default function Contact() {
   return (
@@ -32,6 +33,7 @@ export default function Contact() {
         asidePosition="right"
       />
       <ContactInfoSection />
+      <LocationSection align="left" />
       <Cta
         title="Envie d’en savoir plus avant de commencer ?"
         description="Découvrez comment se déroulent les séances et les différents formats de coaching."
