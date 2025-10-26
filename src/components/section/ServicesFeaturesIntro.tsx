@@ -2,6 +2,7 @@
 
 'use client';
 
+import FeatureCard from '../widgets/FeatureCard';
 import FeaturesGrid from './FeaturesGrid';
 import { services } from '@/data/services';
 
@@ -20,9 +21,18 @@ export default function ServicesFeatures({ className }: Props) {
       ctaHref="/services"
       secondaryCtaLabel="Nous contacter"
       secondaryCtaHref="/contact"
-      align="left"
-      cardGradient={['#e5e7eb', '#9ca3af']}
+      align="center"
       className={className}
+      renderItem={(item) => (
+        <FeatureCard
+          icon={item.icon}
+          title={item.title}
+          description={item.description}
+          variant="default"
+          tone="neutral"
+          align="center"
+        />
+      )}
     />
   );
 }

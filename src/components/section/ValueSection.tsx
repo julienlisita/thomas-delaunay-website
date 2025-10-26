@@ -12,7 +12,6 @@ type ValuesSectionProps = {
   eyebrow?: string;
   title?: string;
   subtitle?: string;
-  cardGradient?: [string, string] | false;
 };
 
 export default function ValuesSection({
@@ -21,7 +20,6 @@ export default function ValuesSection({
   eyebrow = 'Nos valeurs',
   title = 'Ce qui nous guide',
   subtitle = 'Des principes simples qui structurent notre accompagnement.',
-  cardGradient,
 }: ValuesSectionProps) {
   return (
     <FeaturesGrid
@@ -37,9 +35,9 @@ export default function ValuesSection({
           icon={item.icon}
           title={item.title}
           description={item.description}
-          variant="with-header"
-          gradient={['#e5e7eb', '#9ca3af']}
-          align="left"
+          variant="outlined"
+          tone="neutral"
+          align="center"
         />
       )}
       getKey={(it, i) => `${it.title}-${i}`}

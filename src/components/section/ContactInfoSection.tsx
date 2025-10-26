@@ -25,9 +25,9 @@ export default function ContactInfoSection({ className }: Props) {
           icon={item.icon}
           title={item.title}
           description={item.description}
-          variant="with-header"
-          align="left"
-          gradient={['#e5e7eb', '#9ca3af']}
+          variant="default"
+          tone="warning"
+          align="center"
         />
       )}
     />
