@@ -1,5 +1,77 @@
 /* src/components/widgets/FeatureCard.css */
 
+/* ================================
+   Tones (branchent des tokens existants)
+   Palette: dark/blue/mint/sand/coral/night/light
+   ================================ */
+
+/* Neutral = défaut (peut rester identique aux tokens globaux) */
+.feature-card--neutral {
+  /* utile si tu veux figer un rendu neutre même si le thème global change */
+  --card-bg: var(--color-surface);
+  --card-text: var(--color-text);
+  --card-title: var(--color-section-title);
+  --card-border: var(--color-light);
+  --card-icon-fg: var(--color-blue);
+
+  --card-header-bg: var(--color-blue); /* with-header par défaut */
+  --card-header-fg: #ffffff;
+
+  --card-gradient-start: var(--color-blue);
+  --card-gradient-end: var(--color-coral);
+  --card-gradient-fg: #ffffff;
+}
+
+/* Brand = duo bleu/corail, accentué (pour packs, éléments clés) */
+.feature-card--brand {
+  --card-bg: #ffffff; /* surface plus "clean" pour le contraste */
+  --card-text: var(--color-dark);
+  --card-title: var(--color-heading);
+  --card-border: var(--color-light);
+  --card-icon-fg: var(--color-blue);
+
+  /* Header (with-header) */
+  --card-header-bg: linear-gradient(135deg, var(--color-blue), var(--color-coral));
+  --card-header-fg: #ffffff;
+
+  /* Carte entière (gradient) */
+  --card-gradient-start: var(--color-blue);
+  --card-gradient-end: var(--color-coral);
+  --card-gradient-fg: #ffffff;
+}
+
+/* Success = ambiance apaisée (mint + blue), lisible sur fond clair */
+.feature-card--success {
+  --card-bg: var(--color-sand);
+  --card-text: var(--color-dark);
+  --card-title: var(--color-heading);
+  --card-border: color-mix(in oklab, var(--color-mint) 55%, white);
+  --card-icon-fg: var(--color-blue);
+
+  --card-header-bg: linear-gradient(135deg, var(--color-mint), var(--color-blue));
+  --card-header-fg: var(--color-night);
+
+  --card-gradient-start: var(--color-mint);
+  --card-gradient-end: var(--color-blue);
+  --card-gradient-fg: var(--color-night);
+}
+
+/* Warning/Highlight = corail proéminent (pour mise en avant douce) */
+.feature-card--warning {
+  --card-bg: #ffffff;
+  --card-text: var(--color-dark);
+  --card-title: var(--color-heading);
+  --card-border: color-mix(in oklab, var(--color-coral) 40%, white);
+  --card-icon-fg: var(--color-coral);
+
+  --card-header-bg: var(--color-coral); /* plein pour le header */
+  --card-header-fg: #ffffff;
+
+  --card-gradient-start: var(--color-coral);
+  --card-gradient-end: color-mix(in oklab, var(--color-coral) 80%, white);
+  --card-gradient-fg: #ffffff;
+}
+
 /* Base card */
 .feature-card {
   @apply transition overflow-hidden;
@@ -22,24 +94,23 @@
 .feature-card--gradient {
   color: var(--card-gradient-fg);
   border: none;
-  /* gradient appliqué inline via props;
-     fallback si non fourni : */
   background-image: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-end));
 }
 
-/* Header (pas de text-center ici, géré par TS) */
-.feature-card__header {
-  @apply flex flex-col space-y-2 p-4;
+.feature-card--with-header .feature-card__header {
   background: var(--card-header-bg);
-  color: var(--card-header-fg); /* quand headerColor/gradient */
+  color: var(--card-header-fg);
 }
 
-/* Body */
+/* Header / Body */
+.feature-card__header {
+  @apply flex flex-col space-y-2 p-4;
+}
 .feature-card__body {
   @apply flex flex-col p-6 pt-8 gap-2;
 }
 
-/* Icon */
+/* Icône */
 .feature-card__icon {
   @apply inline-flex items-center;
 }
@@ -50,10 +121,10 @@
 }
 .feature-card--gradient .feature-card__icon-inner,
 .feature-card__header .feature-card__icon-inner {
-  color: currentColor; /* hérite du header/gradient */
+  color: currentColor;
 }
 
-/* Title */
+/* Titre */
 .feature-card__title {
   @apply text-base sm:text-lg font-semibold;
   color: var(--card-title);
@@ -67,10 +138,10 @@
 .feature-card__desc {
   @apply text-sm leading-relaxed;
   color: var(--card-text);
-  opacity: var(--card-muted-opacity); /* remplace gray-600 */
+  opacity: var(--card-muted-opacity);
 }
-.feature-card--gradient .feature-card__desc,
-.feature-card__header .feature-card__desc {
-  color: var(--card-header-fg);
-  opacity: 0.95;
+
+/* Actions */
+.feature-card__actions {
+  @apply mt-2;
 }
