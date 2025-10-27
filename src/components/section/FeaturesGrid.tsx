@@ -3,8 +3,8 @@
 'use client';
 
 import React, { useMemo, useState } from 'react';
-import Section from '@/components/common/Section';
-import SectionWrapper from '@/components/common/SectionWrapper';
+import Section from '@/components/layout/Section';
+import SectionWrapper from '@/components/layout/SectionWrapper';
 import SectionTitle from '@/components/ui/SectionTitle';
 import Eyebrow from '@/components/ui/Eyebrow';
 import Subtitle from '@/components/ui/Subtitle';

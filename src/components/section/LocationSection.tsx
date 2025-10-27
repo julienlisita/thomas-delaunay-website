@@ -2,8 +2,8 @@
 
 'use client';
 
-import Section from '@/components/common/Section';
-import SectionWrapper from '@/components/common/SectionWrapper';
+import Section from '@/components/layout/Section';
+import SectionWrapper from '@/components/layout/SectionWrapper';
 import Eyebrow from '@/components/ui/Eyebrow';
 import SectionTitle from '@/components/ui/SectionTitle';
 import Subtitle from '@/components/ui/Subtitle';
