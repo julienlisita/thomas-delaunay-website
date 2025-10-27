@@ -3,7 +3,7 @@
 'use client';
 
 import FeatureCard from '../data-display/FeatureCard';
-import FeaturesGrid from './FeaturesGrid';
+import FeaturesGrid from './../section/FeaturesGrid';
 import { services } from '@/data/services';
 
 type Props = {

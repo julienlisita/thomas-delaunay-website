@@ -1,10 +1,10 @@
 // src/components/pages/Home.tsx
 
 import Cta from '../patterns/Cta';
-import Hero from '../section/Hero';
-import ServicesFeaturesIntro from '../section/ServicesFeaturesIntro';
-import TestimonialsSectionHomeServer from '../section/TestimonialsSectionHomeServer';
-import AboutSectionHome from '../section/AboutSectionHome';
+import Hero from '../home/Hero';
+import ServicesFeaturesIntro from '../home/ServicesFeaturesIntro';
+import TestimonialsSectionHomeServer from '../home/TestimonialsSectionHomeServer';
+import AboutSectionHome from '../home/AboutSectionHome';
 
 export default function Home() {
   return (

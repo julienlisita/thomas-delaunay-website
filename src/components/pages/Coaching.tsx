@@ -1,8 +1,8 @@
 // src/components/pages/Coaching.tsx
 
 import { Dumbbell } from 'lucide-react';
-import HeroIntro from '../section/HeroIntro';
-import Cta from '../patterns//Cta';
+import HeroIntro from './../patterns/HeroIntro';
+import Cta from '../patterns/Cta';
 
 export default function Coaching() {
   return (

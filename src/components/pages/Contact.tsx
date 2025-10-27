@@ -1,11 +1,11 @@
 // src/components/pages/Contact.tsx
 
-import HeroIntro from '../section/HeroIntro';
+import HeroIntro from './../patterns/HeroIntro';
 import { Mail } from 'lucide-react';
-import ContactFormSection from '../section/ContactFormSection';
-import ContactInfoSection from '../section/ContactInfoSection';
-import Cta from '../patterns//Cta';
-import LocationSection from '../section/LocationSection';
+import ContactFormSection from '../contact/ContactFormSection';
+import ContactInfoSection from '../contact/ContactInfoSection';
+import Cta from '../patterns/Cta';
+import LocationSection from '../contact/LocationSection';
 
 export default function Contact() {
   return (

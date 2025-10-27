@@ -1,6 +1,6 @@
 // src/components/section/AboutSectionHome.tsx
 
-import SplitSection from './SplitSection';
+import SplitSection from './../section/SplitSection';
 
 type Props = {
   className?: string;

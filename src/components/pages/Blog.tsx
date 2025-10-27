@@ -1,7 +1,7 @@
 // src/components/pages/Blog.tsx
 
 import { BookOpen } from 'lucide-react';
-import HeroIntro from '../section/HeroIntro';
+import HeroIntro from './../patterns/HeroIntro';
 import Cta from '../patterns/Cta';
 
 export default function Blog() {

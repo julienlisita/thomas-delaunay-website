@@ -1,9 +1,9 @@
 // src/components/pages/About.tsx
 
 import Cta from '../patterns/Cta';
-import HeroIntro from '../section/HeroIntro';
+import HeroIntro from './../patterns/HeroIntro';
 import { UserRound } from 'lucide-react';
-import ValuesSection from '../section/ValueSection';
+import ValuesSection from '../about/ValueSection';
 
 export default function About() {
   return (

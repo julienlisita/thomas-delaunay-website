@@ -1,8 +1,8 @@
 // src/components/pages/Testimonials.tsx
 
 import { MessageCircle } from 'lucide-react';
-import HeroIntro from '../section/HeroIntro';
-import TestimonialsSectionServer from '../section/TestimonialsSectionServer';
+import HeroIntro from './../patterns/HeroIntro';
+import TestimonialsSectionServer from '../testimonials/TestimonialsSectionServer';
 import Cta from '../patterns/Cta';
 
 export const runtime = 'nodejs'; // si tu utilises tes constantes: export { runtime, dynamic, revalidate } from ...
