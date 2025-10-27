@@ -2,7 +2,7 @@
 
 'use client';
 
-import FeaturesGrid from './../section/FeaturesGrid';
+import FeaturesGrid from './../patterns/FeaturesGrid';
 import FeatureCard from '@/components/data-display/FeatureCard';
 import { values } from '@/data/values';
 

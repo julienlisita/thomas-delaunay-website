@@ -7,7 +7,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import Eyebrow from '@/components/ui/Eyebrow';
 import Button from '@/components/ui/Button';
-import '@/components/section/SplitSection.css';
+import '@/components/patterns/SplitSection.css';
 import Section from '@/components/layout/Section';
 import SectionWrapper from '@/components/layout/SectionWrapper';
 import SectionTitle from '@/components/ui/SectionTitle';

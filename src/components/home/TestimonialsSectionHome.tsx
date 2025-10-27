@@ -4,7 +4,7 @@
 
 import type { Testimonial } from '@/types/testimonial';
 import { TestimonialCard } from '@/components/data-display/TestimonialCard';
-import FeaturesGrid from './../section/FeaturesGrid';
+import FeaturesGrid from './../patterns/FeaturesGrid';
 
 type Props = {
   items: ReadonlyArray<Testimonial>;
