@@ -3,7 +3,7 @@
 'use client';
 
 import FeaturesGrid from './FeaturesGrid';
-import FeatureCard from '@/components/widgets/FeatureCard';
+import FeatureCard from '@/components/data-display/FeatureCard';
 import { values } from '@/data/values';
 
 type ValuesSectionProps = {

@@ -2,7 +2,7 @@
 
 'use client';
 
-import FeatureCard from '../widgets/FeatureCard';
+import FeatureCard from '../data-display/FeatureCard';
 import FeaturesGrid from './FeaturesGrid';
 import { services } from '@/data/services';
 

@@ -3,7 +3,7 @@
 'use client';
 
 import type { Testimonial } from '@/types/testimonial';
-import { TestimonialCard } from '@/components/widgets/TestimonialCard';
+import { TestimonialCard } from '@/components/data-display/TestimonialCard';
 import FeaturesGrid from './FeaturesGrid';
 
 export default function TestimonialsSection({ items }: { items: ReadonlyArray<Testimonial> }) {
