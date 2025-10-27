@@ -1,6 +1,6 @@
 // src/components/pages/About.tsx
 
-import Cta from '../ui/Cta';
+import Cta from '../patterns/Cta';
 import HeroIntro from '../section/HeroIntro';
 import { UserRound } from 'lucide-react';
 import ValuesSection from '../section/ValueSection';

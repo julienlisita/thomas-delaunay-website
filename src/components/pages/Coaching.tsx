@@ -2,7 +2,7 @@
 
 import { Dumbbell } from 'lucide-react';
 import HeroIntro from '../section/HeroIntro';
-import Cta from '../ui/Cta';
+import Cta from '../patterns//Cta';
 
 export default function Coaching() {
   return (

@@ -1,6 +1,6 @@
 // src/components/pages/Home.tsx
 
-import Cta from '../ui/Cta';
+import Cta from '../patterns/Cta';
 import Hero from '../section/Hero';
 import ServicesFeaturesIntro from '../section/ServicesFeaturesIntro';
 import TestimonialsSectionHomeServer from '../section/TestimonialsSectionHomeServer';
