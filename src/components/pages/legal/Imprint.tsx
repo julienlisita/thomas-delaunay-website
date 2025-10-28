@@ -1,12 +1,12 @@
 // src/components/pages/legal/Imprint.tsx
 
-import HeroIntro from '@/components/section/HeroIntro';
+import PageHero from '@/components/patterns/PageHero';
 import { Scale } from 'lucide-react';
 
 export default function Imprint() {
   return (
     <div>
-      <HeroIntro
+      <PageHero
         icon={<Scale size={40} />}
         title="Mentions légales"
         subtitle="Informations légales concernant l’édition et l’hébergement du site de Thomas Delaunay coaching."

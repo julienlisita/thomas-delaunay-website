@@ -1,4 +1,4 @@
-// src/components/section/AboutSectionHome.tsx
+// src/components/home/AboutTeaser.tsx
 
 import SplitSection from './../patterns/SplitSection';
 
@@ -6,7 +6,7 @@ type Props = {
   className?: string;
 };
 
-export default function AboutSectionHome({ className }: Props) {
+export default function AboutTeaser({ className }: Props) {
   return (
     <SplitSection
       // contenu

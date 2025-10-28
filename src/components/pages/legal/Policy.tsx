@@ -1,12 +1,12 @@
 // src/components/pages/legal/Policy.tsx
 
-import HeroIntro from '@/components/section/HeroIntro';
+import PageHero from '@/components/patterns/PageHero';
 import { Shield } from 'lucide-react';
 
 export default function Privacy() {
   return (
     <div>
-      <HeroIntro
+      <PageHero
         icon={<Shield size={40} />}
         title="Politique de confidentialité"
         subtitle="Découvrez comment nous collectons, utilisons et protégeons vos données personnelles conformément au RGPD."

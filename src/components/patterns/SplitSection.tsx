@@ -1,4 +1,4 @@
-// src/components/section/SplitSection.tsx
+// src/components/patterns/SplitSection.tsx
 
 'use client';
 

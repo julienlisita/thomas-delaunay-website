@@ -1,4 +1,4 @@
-// src/components/sections/ContactInfoSection.tsx
+// src/components/contact/ContactInfoSection.tsx
 
 'use client';
 

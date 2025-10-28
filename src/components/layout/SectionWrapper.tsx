@@ -1,4 +1,4 @@
-// src/components/common/SectionWrapper.tsx
+// src/components/layout/SectionWrapper.tsx
 
 type SectionWrapperProps = {
   children: React.ReactNode;

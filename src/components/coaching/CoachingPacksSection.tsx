@@ -1,16 +1,16 @@
-// src/components/Section/ServicesSection.tsx
+// src/components/coaching/CoachingPacksSection.tsx
 
 'use client';
 
 import FeatureCard from '../data-display/FeatureCard';
-import FeaturesGrid from './FeaturesGrid';
+import FeaturesGrid from './../patterns/FeaturesGrid';
 import { services } from '@/data/services';
 
 type Props = {
   className?: string;
 };
 
-export default function ServicesSection({ className }: Props) {
+export default function CoachingPacksSection({ className }: Props) {
   return (
     <FeaturesGrid
       eyebrow={'Nos Services'}
@@ -25,7 +25,7 @@ export default function ServicesSection({ className }: Props) {
           icon={item.icon}
           title={item.title}
           description={item.description}
-          variant="outlined"
+          variant="default"
           tone="neutral"
           align="center"
         />

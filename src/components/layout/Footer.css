@@ -1,3 +1,5 @@
+/* src/components/layout/Footer.css */
+
 /* ----------- Structure globale ----------- */
 .footer {
   @apply bg-[var(--color-footer-bg)] text-[var(--color-footer-text)]

@@ -1,12 +1,12 @@
-// src/components/sections/ValuesSection.tsx
+// src/components/about/ValuesSection.tsx
 
 'use client';
 
-import FeaturesGrid from './../patterns/FeaturesGrid';
+import FeaturesGrid from '../patterns/FeaturesGrid';
 import FeatureCard from '@/components/data-display/FeatureCard';
 import { values } from '@/data/values';
 
-type ValuesSectionProps = {
+type Props = {
   className?: string;
   align?: 'left' | 'center' | 'right';
   eyebrow?: string;
@@ -20,7 +20,7 @@ export default function ValuesSection({
   eyebrow = 'Nos valeurs',
   title = 'Ce qui nous guide',
   subtitle = 'Des principes simples qui structurent notre accompagnement.',
-}: ValuesSectionProps) {
+}: Props) {
   return (
     <FeaturesGrid
       className={className}

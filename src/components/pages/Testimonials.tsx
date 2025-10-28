@@ -1,7 +1,7 @@
 // src/components/pages/Testimonials.tsx
 
 import { MessageCircle } from 'lucide-react';
-import HeroIntro from './../patterns/HeroIntro';
+import PageHero from '@/components/patterns/PageHero';
 import TestimonialsSectionServer from '../testimonials/TestimonialsSectionServer';
 import Cta from '../patterns/Cta';
 
@@ -10,7 +10,7 @@ export const runtime = 'nodejs'; // si tu utilises tes constantes: export { runt
 export default function TestimonialsPageView() {
   return (
     <div>
-      <HeroIntro
+      <PageHero
         icon={<MessageCircle size={40} />}
         title="Des parcours inspirants"
         subtitle="Découvrez les expériences et réussites de celles et ceux que j’ai accompagnés."

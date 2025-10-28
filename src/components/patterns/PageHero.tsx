@@ -1,11 +1,11 @@
-// src/components/section/HeroIntro.tsx
+// src/components/patterns/PageHero.tsx
 
 'use client';
 
 import PageTitle from '@/components/ui/PageTitle';
 import clsx from 'clsx';
 import type { ReactNode } from 'react';
-import './HeroIntro.css';
+import './PageHero.css';
 
 type HeroIntroProps = {
   title: string;
@@ -15,7 +15,7 @@ type HeroIntroProps = {
   className?: string;
 };
 
-export default function HeroIntro({
+export default function PageHero({
   title,
   subtitle,
   align = 'center',

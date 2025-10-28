@@ -1,4 +1,4 @@
-// src/components/sections/ContactFormSection.tsx
+// src/components/contact/ContactFormSection.tsx
 
 'use client';
 
@@ -11,7 +11,7 @@ import ContactForm from '@/components/form/ContactForm'; // adapte le chemin si 
 import clsx from 'clsx';
 import './ContactFormSection.css';
 
-type ContactFormSectionProps = {
+type Props = {
   eyebrow?: string;
   title?: string;
   subtitle?: string;
@@ -30,7 +30,7 @@ export default function ContactFormSection({
   className,
   aside,
   asidePosition = 'left',
-}: ContactFormSectionProps) {
+}: Props) {
   // header align (mobile centré, desktop selon align)
   const headerAlign =
     align === 'left' ? 'lg:text-left' : align === 'right' ? 'lg:text-right' : 'lg:text-center';

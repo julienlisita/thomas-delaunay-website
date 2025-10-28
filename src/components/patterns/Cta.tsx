@@ -1,4 +1,4 @@
-// src/components/ui/Cta.tsx
+// src/components/patterns/Cta.tsx
 
 'use client';
 

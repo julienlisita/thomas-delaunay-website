@@ -1,4 +1,4 @@
-// src/components/sections/ServicesFeaturesIntro.tsx
+// src/components/home/ServicesTeaser.tsx
 
 'use client';
 
@@ -10,7 +10,7 @@ type Props = {
   className?: string;
 };
 
-export default function ServicesFeatures({ className }: Props) {
+export default function ServicesTeaser({ className }: Props) {
   return (
     <FeaturesGrid
       eyebrow="Nos Services"

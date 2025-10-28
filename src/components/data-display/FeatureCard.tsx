@@ -1,3 +1,5 @@
+// src/components/data-display/FeatureCard.tsx
+
 'use client';
 
 import React from 'react';

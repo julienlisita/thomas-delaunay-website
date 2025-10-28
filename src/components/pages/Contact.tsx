@@ -1,6 +1,6 @@
 // src/components/pages/Contact.tsx
 
-import HeroIntro from './../patterns/HeroIntro';
+import PageHero from '@/components/patterns/PageHero';
 import { Mail } from 'lucide-react';
 import ContactFormSection from '../contact/ContactFormSection';
 import ContactInfoSection from '../contact/ContactInfoSection';
@@ -10,7 +10,7 @@ import LocationSection from '../contact/LocationSection';
 export default function Contact() {
   return (
     <div>
-      <HeroIntro
+      <PageHero
         icon={<Mail size={40} />}
         title="Contactez-moi"
         subtitle="Expliquez-moi vos besoins ou vos objectifs — je vous réponds rapidement pour définir votre accompagnement."

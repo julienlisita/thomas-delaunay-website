@@ -1,13 +1,13 @@
 // src/components/pages/Blog.tsx
 
 import { BookOpen } from 'lucide-react';
-import HeroIntro from './../patterns/HeroIntro';
+import PageHero from '@/components/patterns/PageHero';
 import Cta from '../patterns/Cta';
 
 export default function Blog() {
   return (
     <div>
-      <HeroIntro
+      <PageHero
         icon={<BookOpen size={40} />}
         title="Conseils et inspiration"
         subtitle="Articles sur la nutrition, l’équilibre et le bien-être — pour prolonger le coaching au quotidien."

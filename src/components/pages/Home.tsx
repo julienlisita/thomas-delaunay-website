@@ -2,17 +2,17 @@
 
 import Cta from '../patterns/Cta';
 import Hero from '../home/Hero';
-import ServicesFeaturesIntro from '../home/ServicesFeaturesIntro';
-import TestimonialsSectionHomeServer from '../home/TestimonialsSectionHomeServer';
-import AboutSectionHome from '../home/AboutSectionHome';
+import ServicesTeaser from '../home/ServicesTeaser';
+import TestimonialsTeaserServer from '../home/TestimonialsTeaserServer';
+import AboutTeaser from '../home/AboutTeaser';
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <AboutSectionHome />
-      <ServicesFeaturesIntro />
-      <TestimonialsSectionHomeServer />
+      <AboutTeaser />
+      <ServicesTeaser />
+      <TestimonialsTeaserServer />
       <Cta
         title="Prêt à reprendre le mouvement ?"
         description="Je vous accompagne pas à pas, à votre rythme — pour retrouver énergie, équilibre et confiance."

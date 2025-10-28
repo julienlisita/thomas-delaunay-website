@@ -1,4 +1,4 @@
-// src/components/common/Section.tsx
+// src/components/layout/Section.tsx
 
 import React from 'react';
 

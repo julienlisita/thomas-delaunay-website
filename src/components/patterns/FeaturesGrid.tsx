@@ -1,4 +1,4 @@
-// src/components/sections/FeaturesGrid.tsx
+// src/components/patterns/FeaturesGrid.tsx
 
 'use client';
 

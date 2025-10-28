@@ -1,14 +1,14 @@
 // src/components/pages/About.tsx
 
 import Cta from '../patterns/Cta';
-import HeroIntro from './../patterns/HeroIntro';
+import PageHero from './../patterns/PageHero';
 import { UserRound } from 'lucide-react';
-import ValuesSection from '../about/ValueSection';
+import ValuesSection from '../about/ValuesSection';
 
 export default function About() {
   return (
     <div>
-      <HeroIntro
+      <PageHero
         icon={<UserRound size={40} />}
         title="Thomas Delaunay — Coach sportif et bien-être"
         subtitle="Ancien nageur et passionné de surf, j’accompagne chacun à retrouver confiance, équilibre et énergie."

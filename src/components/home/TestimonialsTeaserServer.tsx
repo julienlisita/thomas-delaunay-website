@@ -1,9 +1,9 @@
-// src/components/sections/TestimonialsSectionHomeServer.tsx
+// src/components/home/TestimonialsTeaserServer.tsx
 
-import TestimonialsSectionHome from './TestimonialsSectionHome';
+import TestimonialsTeaser from './TestimonialsTeaser';
 import { getPublicTestimonialsServer } from '@/server/services/testimonials.server';
 
-export default async function TestimonialsSectionHomeServer() {
+export default async function TestimonialsTeaserServer() {
   const LIMIT = 2;
   const onlyFeatured = false;
 
@@ -13,5 +13,5 @@ export default async function TestimonialsSectionHomeServer() {
   if (filtered.length === 0) filtered = all;
 
   const items = filtered.slice(0, LIMIT);
-  return <TestimonialsSectionHome items={items} />;
+  return <TestimonialsTeaser items={items} />;
 }
