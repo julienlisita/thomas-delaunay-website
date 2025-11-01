@@ -1,4 +1,5 @@
 // src/components/home/AboutTeaser.tsx
+
 'use client';
 
 import Section from '@/components/layout/Section';
@@ -14,50 +15,27 @@ export default function AboutTeaser() {
   return (
     <Section>
       <SectionWrapper className="max-w-6xl mx-auto">
-        <HeaderBlock
-          eyebrow="À propos"
-          title="Un coaching humain et pragmatique"
-          subtitle="Méthode claire, objectifs réalistes, résultats mesurables"
-          align="center"
-        />
+        <HeaderBlock eyebrow="RENCONTRE" title="À propos de Thomas" />
 
         <Split className="mt-4">
           {/* Colonne texte */}
           <div>
             <Lead className="mb-4">
-              Je vous accompagne avec une approche simple : comprendre vos besoins, construire un
-              plan actionnable, suivre vos progrès et ajuster au bon rythme.
+              Ancien nageur et passionné de surf, j’ai toujours vu le mouvement comme une source
+              d’équilibre. Aujourd’hui, j’accompagne chacun à retrouver cette harmonie à travers une
+              approche douce, réaliste et personnalisée.
             </Lead>
-
-            <Prose className="mb-6">
-              <h3>Ce qui me guide</h3>
-              <ul>
-                <li>Écoute active et pédagogie — on part de votre réalité.</li>
-                <li>Progression durable — petites victoires, grands effets.</li>
-                <li>Méthode mesurable — suivi, feedback et ajustements.</li>
-              </ul>
-
-              <h3>Pour qui ?</h3>
-              <ul>
-                <li>Reprise en douceur après une pause ou une blessure.</li>
-                <li>Objectif forme et énergie au quotidien.</li>
-                <li>Préparation d’un défi perso (5K, rando, sport co, etc.).</li>
-              </ul>
-            </Prose>
 
             <ActionsStack
               align="left"
-              items={[
-                { label: 'Découvrir mon parcours', href: '/about', variant: 'primary' },
-                { label: 'Prendre contact', href: '/contact', variant: 'secondary' },
-              ]}
+              items={[{ label: 'Découvrir mon parcours', href: '/about', variant: 'primary' }]}
             />
           </div>
 
           {/* Colonne visuel */}
           <div>
             <Media
-              src="/images/home/portrait.jpg" // remplace par ton image
+              src="/images/home/portrait.png" // remplace par ton image
               alt="Séance de coaching personnalisée en extérieur"
               width={1200}
               height={900}
