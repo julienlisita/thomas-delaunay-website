@@ -5,12 +5,14 @@ import Hero from '../home/Hero';
 import TestimonialsTeaserServer from '../home/TestimonialsTeaserServer';
 import AboutTeaser from '../home/AboutTeaser';
 import ApproachTeaser from '../home/ApproachTeaser';
+import PillarsTeaser from '../home/PillarsTeaser';
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <ApproachTeaser />
+      <PillarsTeaser />
       <AboutTeaser />
       <TestimonialsTeaserServer />
       <Cta
