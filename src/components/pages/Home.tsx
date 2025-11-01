@@ -4,11 +4,13 @@ import Cta from '../patterns/Cta';
 import Hero from '../home/Hero';
 import TestimonialsTeaserServer from '../home/TestimonialsTeaserServer';
 import AboutTeaser from '../home/AboutTeaser';
+import ApproachTeaser from '../home/ApproachTeaser';
 
 export default function Home() {
   return (
     <div>
       <Hero />
+      <ApproachTeaser />
       <AboutTeaser />
       <TestimonialsTeaserServer />
       <Cta
