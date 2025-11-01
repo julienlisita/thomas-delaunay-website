@@ -13,9 +13,8 @@ export default function ApproachTeaser() {
     <Section>
       <SectionWrapper>
         <HeaderBlock
-          eyebrow="Mon approche"
+          eyebrow="PHILOSOPHIE "
           title="Écoute, progression, plaisir du mouvement"
-          subtitle="Un accompagnement individualisé qui respecte votre rythme"
           align="center"
         />
 
