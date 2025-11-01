@@ -6,6 +6,7 @@ import TestimonialsTeaserServer from '../home/TestimonialsTeaserServer';
 import AboutTeaser from '../home/AboutTeaser';
 import ApproachTeaser from '../home/ApproachTeaser';
 import PillarsTeaser from '../home/PillarsTeaser';
+import PacksTeaser from '../home/PacksTeaser';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <ApproachTeaser />
       <PillarsTeaser />
+      <PacksTeaser />
       <AboutTeaser />
       <TestimonialsTeaserServer />
       <Cta
