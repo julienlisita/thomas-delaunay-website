@@ -5,38 +5,37 @@
 import type { Testimonial } from '@/types/testimonial';
 import { TestimonialCard } from '@/components/data-display/TestimonialCard';
 import FeaturesGrid from './../patterns/FeaturesGrid';
+import Section from '../layout/Section';
+import SectionWrapper from '../layout/SectionWrapper';
+import HeaderBlock from '../patterns/HeaderBlock';
+import Lead from '../ui/Lead';
 
 export default function TestimonialsSection({ items }: { items: ReadonlyArray<Testimonial> }) {
   return (
-    <FeaturesGrid<Testimonial>
-      eyebrow="Ils nous font confiance"
-      title="Tous les témoignages"
-      subtitle="Consultez les retours authentiques de nos clients."
-      align="left"
-      items={items}
-      tabs={[
-        { label: 'Tous', value: 'all' },
-        { label: 'Mise en avant', value: 'featured' },
-      ]}
-      defaultTab="all"
-      filterByTab={(t, tab) => (tab === 'featured' ? Boolean(t.highlight) : true)}
-      gridClassName="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 sm:gap-6 lg:gap-8"
-      pageSize={8}
-      renderItem={(t) => (
-        <TestimonialCard
-          name={t.name}
-          role={t.role}
-          company={t.company}
-          quote={t.quote}
-          rating={t.rating}
-          avatarUrl={t.avatarUrl}
-          displayDate={t.displayDate}
-          city={t.city}
-          highlight={t.highlight}
-          variant="default"
+    <Section>
+      <SectionWrapper>
+        <HeaderBlock
+          eyebrow="Packs & accompagnements"
+          title="Choisissez le rythme qui vous convient"
+          subtitle="Des formules simples, transparentes, et évolutives selon vos objectifs"
+          align="center"
         />
-      )}
-      getKey={(t) => t.id}
-    />
+
+        <div className="max-w-3xl mx-auto">
+          <Lead className="text-center mb-8">
+            Que vous commenciez tout juste ou que vous visiez une performance précise, je vous
+            propose trois niveaux d’accompagnement pour progresser sans vous perdre dans la
+            complexité.
+          </Lead>
+        </div>
+
+        <FeaturesGrid
+          items={items}
+          pageSize={8}
+          gridClassName="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 sm:gap-6 lg:gap-8"
+          renderItem={(t) => <TestimonialCard {...t} />}
+        />
+      </SectionWrapper>
+    </Section>
   );
 }
