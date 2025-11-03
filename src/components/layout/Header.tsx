@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { href: '/about', label: 'À propos' },
   { href: '/coaching', label: 'Coaching' },
   { href: '/testimonials', label: 'Témoignages' },
-  { href: '/blog', label: 'Blog' },
+  // { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
 
