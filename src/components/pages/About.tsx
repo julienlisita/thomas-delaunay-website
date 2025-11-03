@@ -4,6 +4,9 @@ import Cta from '../patterns/Cta';
 import PageHero from './../patterns/PageHero';
 import { UserRound } from 'lucide-react';
 import ValuesSection from '../about/ValuesSection';
+import Journey from '../about/Journey';
+import Philosophy from '../about/Philosophy';
+import Mission from '../about/Mission';
 
 export default function About() {
   return (
@@ -14,7 +17,10 @@ export default function About() {
         subtitle="Ancien nageur et passionné de surf, j’accompagne chacun à retrouver confiance, équilibre et énergie."
         align="center"
       />
+      <Journey />
+      <Philosophy />
       <ValuesSection />
+      <Mission />
       <Cta
         title="Envie d’un accompagnement à votre rythme ?"
         description="Une méthode douce et progressive, à domicile, en extérieur ou à distance."
