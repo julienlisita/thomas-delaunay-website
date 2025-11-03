@@ -8,26 +8,18 @@ import FeaturesGrid from './../patterns/FeaturesGrid';
 import Section from '../layout/Section';
 import SectionWrapper from '../layout/SectionWrapper';
 import HeaderBlock from '../patterns/HeaderBlock';
-import Lead from '../ui/Lead';
 
 export default function TestimonialsSection({ items }: { items: ReadonlyArray<Testimonial> }) {
   return (
-    <Section>
+    <Section bgColor="light">
       <SectionWrapper>
         <HeaderBlock
-          eyebrow="Packs & accompagnements"
-          title="Choisissez le rythme qui vous convient"
-          subtitle="Des formules simples, transparentes, et évolutives selon vos objectifs"
+          eyebrow="TÉMOIGNAGES"
+          title="Ils ont retrouvé équilibre, énergie et confiance"
+          subtitle="Chaque parcours est unique, mais tous partagent la même envie : se sentir mieux, jour après jour.
+Découvrez leurs histoires."
           align="center"
         />
-
-        <div className="max-w-3xl mx-auto">
-          <Lead className="text-center mb-8">
-            Que vous commenciez tout juste ou que vous visiez une performance précise, je vous
-            propose trois niveaux d’accompagnement pour progresser sans vous perdre dans la
-            complexité.
-          </Lead>
-        </div>
 
         <FeaturesGrid
           items={items}
