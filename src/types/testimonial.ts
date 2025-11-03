@@ -3,9 +3,11 @@
 export interface Testimonial {
   id: number;
   name: string;
+  age?: number;
   role?: string; // ex: “Cliente”, “CEO @ Acme”
   company?: string; // ex: “Compagnie Care Services”
   quote: string;
+  goal?: string;
   rating?: number; // 1..5 (peut être décimal: 4.5 -> arrondi à .5 visuel)
   avatarUrl?: string; // optionnel: /images/clients/lesly.jpg
   displayDate?: string; // ex: “Août 2025”

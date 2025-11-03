@@ -17,14 +17,9 @@ type Props = {
 
 export default function TestimonialsTeaser({ items }: Props) {
   return (
-    <Section>
+    <Section bgColor="#A8D5BA15">
       <SectionWrapper>
-        <HeaderBlock
-          eyebrow="Packs & accompagnements"
-          title="Choisissez le rythme qui vous convient"
-          subtitle="Des formules simples, transparentes, et évolutives selon vos objectifs"
-          align="center"
-        />
+        <HeaderBlock eyebrow="AVIS CLIENTS" title="Ils m’ont fait confiance" align="center" />
 
         <div className="max-w-3xl mx-auto">
           <Lead className="text-center mb-8">
