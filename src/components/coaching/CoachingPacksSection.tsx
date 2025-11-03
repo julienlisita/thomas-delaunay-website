@@ -16,10 +16,10 @@ type Props = {
 
 export default function CoachingPacksSection({ className }: Props) {
   return (
-    <Section>
+    <Section bgColor="sand">
       <SectionWrapper>
         <HeaderBlock
-          eyebrow="Packs & accompagnements"
+          eyebrow="FORMULES"
           title="Choisissez le rythme qui vous convient"
           subtitle="Des formules simples, transparentes, et évolutives selon vos objectifs"
           align="center"
@@ -40,7 +40,7 @@ export default function CoachingPacksSection({ className }: Props) {
               icon={item.icon}
               title={item.title}
               description={item.description}
-              variant="default"
+              variant="outlined"
               tone="neutral"
               align="center"
             />
