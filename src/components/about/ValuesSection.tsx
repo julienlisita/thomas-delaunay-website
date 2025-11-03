@@ -19,9 +19,8 @@ export default function ValuesSection({ className }: Props) {
     <Section>
       <SectionWrapper>
         <HeaderBlock
-          eyebrow="Packs & accompagnements"
-          title="Choisissez le rythme qui vous convient"
-          subtitle="Des formules simples, transparentes, et évolutives selon vos objectifs"
+          eyebrow="VALEURS"
+          title="Les valeurs qui guident mon accompagnement"
           align="center"
         />
 
