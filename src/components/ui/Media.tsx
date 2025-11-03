@@ -15,7 +15,7 @@ type Props = Omit<ImageProps, 'className'> & {
 
 export default function Media({
   radius = 'xl',
-  shadow = true,
+  shadow = false,
   className,
   imgClassName,
   ...img
@@ -31,6 +31,7 @@ export default function Media({
             : radius === '2xl'
               ? 'rounded-2xl'
               : '',
+        radius !== 'none' && 'overflow-hidden',
         className
       )}
     >
