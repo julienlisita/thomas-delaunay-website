@@ -8,8 +8,8 @@ export const contactInfos: ReadonlyArray<FeatureItem> = [
     icon: Phone,
     title: 'Téléphone',
     description: (
-      <a href="tel:+33612345678" className="underline hover:no-underline">
-        +33 6 12 34 56 78
+      <a href="tel:+33645872319" className="underline hover:no-underline">
+        06 45 87 23 19
       </a>
     ),
   },
@@ -17,8 +17,8 @@ export const contactInfos: ReadonlyArray<FeatureItem> = [
     icon: Mail,
     title: 'Email',
     description: (
-      <a href="mailto:contact@company-care.fr" className="underline hover:no-underline">
-        contact@company-care.fr
+      <a href="mailto:contact@thomasdelaunaycoaching.fr " className="underline hover:no-underline">
+        contact@thomasdelaunaycoaching.fr
       </a>
     ),
   },
@@ -32,7 +32,8 @@ export const contactInfos: ReadonlyArray<FeatureItem> = [
         rel="noopener noreferrer"
         className="underline hover:no-underline"
       >
-        12 rue Exemple, 75000 Paris
+        12 rue des Frênes <br />
+        33000 Bordeaux – France
       </a>
     ),
   },
