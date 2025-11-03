@@ -41,8 +41,7 @@ export default function AboutTeaser() {
               height={900}
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
-              radius="2xl"
-              shadow
+              radius="xl"
               className="max-w-xl mx-auto"
             />
           </div>
