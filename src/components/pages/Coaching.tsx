@@ -8,6 +8,7 @@ import Approach from '../coaching/Approach';
 import Pillars from '../coaching/Pillars';
 import Formats from '../coaching/Formats';
 import FollowUp from '../coaching/FollowUp';
+import Nutrition from '../coaching/Nutrition';
 
 export default function Coaching() {
   return (
@@ -23,6 +24,7 @@ export default function Coaching() {
       <CoachingPacksSection />
       <Formats />
       <FollowUp />
+      <Nutrition />
       <Cta
         title="Des progrès concrets, à votre rythme"
         description="Chaque personne avance différemment — découvrez comment mes clients ont retrouvé confiance et énergie durablement."

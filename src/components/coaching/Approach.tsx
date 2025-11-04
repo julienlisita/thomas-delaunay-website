@@ -11,7 +11,7 @@ import Media from '../ui/Media';
 export default function Approach() {
   return (
     <Section>
-      <SectionWrapper>
+      <SectionWrapper className="max-w-6xl mx-auto">
         <HeaderBlock eyebrow="PHILOSOPHIE" title="Mon approche du coaching" />
 
         <Lead className="text-center mb-6">
