@@ -1,30 +1,47 @@
 /* src/components/form/Radio.css */
 
-/* Base label container */
+/* ===========================
+   Label container
+   =========================== */
 .radio-label {
   @apply inline-flex items-center gap-2 cursor-pointer text-sm select-none;
-  color: var(--color-text);
+  padding: 0.25rem 0.125rem;
+  color: var(--color-dark);
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
+/* Hover sur le label → accent doux bleu */
 .radio-label:hover {
-  color: color-mix(in oklab, var(--color-text), var(--color-primary) 30%);
+  color: color-mix(in oklab, var(--color-dark) 80%, var(--color-blue) 20%);
 }
 
-/* Input invisible stylé via accent-color */
+/* ===========================
+   Input stylé (mint au repos)
+   =========================== */
 .radio-input {
-  @apply h-4 w-4 rounded-full border transition-colors;
-  appearance: none; /* on remplace le rendu natif */
-  border: 1.5px solid var(--color-border);
-  background-color: var(--color-surface);
+  @apply h-4 w-4 rounded-full transition-all;
+  appearance: none;
+  -webkit-appearance: none;
   position: relative;
   cursor: pointer;
+
+  background-color: #ffffff;
+  border: 1px solid color-mix(in oklab, var(--color-mint) 45%, white);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
-/* Cercle intérieur “checked” */
+/* Hover : bordure mint → bleu clair */
+.radio-input:hover {
+  border-color: color-mix(in oklab, var(--color-blue) 30%, var(--color-mint) 50%);
+}
+
+/* Checked : bleu océan */
 .radio-input:checked {
-  border-color: var(--color-primary);
+  border-color: var(--color-blue);
 }
 
 .radio-input:checked::after {
@@ -34,26 +51,44 @@
   margin: auto;
   width: 0.5rem;
   height: 0.5rem;
-  border-radius: 50%;
-  background-color: var(--color-primary);
+  border-radius: 9999px;
+  background-color: var(--color-blue);
   transform: scale(1);
   transition: transform 0.2s ease;
 }
 
-/* Focus visible et accessible */
+/* Focus accessible (halo bleu clair, cohérent avec inputs) */
 .radio-input:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary), white 80%);
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-blue) 25%, white 80%);
 }
 
-/* Disabled */
+/* Disabled / Readonly */
+.radio-input:disabled {
+  cursor: not-allowed;
+  background-color: color-mix(in oklab, #ffffff 80%, var(--color-sand) 20%);
+  border-color: color-mix(in oklab, var(--color-mint) 25%, white);
+}
 .radio-input:disabled + .radio-text {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* Texte du label */
+/* ===========================
+   Texte du label
+   =========================== */
 .radio-text {
   line-height: 1;
   color: inherit;
+}
+
+/* ===========================
+   Accessibilité
+   =========================== */
+@media (prefers-reduced-motion: reduce) {
+  .radio-input,
+  .radio-input::after {
+    transition: none;
+  }
 }

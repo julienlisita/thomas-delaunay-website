@@ -38,7 +38,7 @@ export default function ContactFormSection({
   const hasAside = Boolean(aside);
 
   return (
-    <Section className={clsx('contact-form-section', className)}>
+    <Section bgColor="sand-light" className={clsx('contact-form-section', className)}>
       <SectionWrapper>
         {(eyebrow || title || subtitle) && (
           <header className={clsx('mb-8 text-center', headerAlign)}>
@@ -59,8 +59,8 @@ export default function ContactFormSection({
             <div className="contact-form-aside">{aside}</div>
           )}
 
-          <div className="max-w-2xl bg-white">
-            <ContactForm />
+          <div>
+            <ContactForm className=" max-w-3xl m-auto" ctaAlign="center" />
           </div>
 
           {hasAside && asidePosition === 'right' && (

@@ -7,7 +7,8 @@
 /* Zone “aside” (facultative) : texte, infos RGPD, horaires, coordonnées compactes… */
 .contact-form-aside {
   @apply bg-white rounded-xl shadow p-6 sm:p-8;
-  color: var(--color-dark);
+  border: 1px solid color-mix(in oklab, var(--color-sand) 60%, white);
+  border-radius: 1rem;
 }
 
 .contact-form-aside h3 {

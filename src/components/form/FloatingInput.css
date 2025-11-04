@@ -6,41 +6,47 @@
   width: 100%;
 }
 
-/* Champ */
+/* Champ principal */
 .floating-input {
   @apply block w-full text-sm rounded-md transition px-3 pb-2.5 pt-4;
-  background-color: var(--color-surface);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
+  background-color: #ffffff;
+  color: var(--color-dark);
+  padding: 0.875rem 1rem;
+  border: 1px solid color-mix(in oklab, var(--color-mint) 45%, white); /* mint-light */
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
-/* Masquer la vraie couleur placeholder (truc pour le floating) */
+/* Masquer la vraie couleur placeholder */
 .floating-input::placeholder {
   color: transparent;
 }
 
-/* Hover / Focus */
+/* Hover : bordure légèrement bleue */
 .floating-input:hover {
-  border-color: color-mix(in oklab, var(--color-border), var(--color-text) 20%);
+  border-color: color-mix(in oklab, var(--color-blue) 30%, var(--color-mint) 50%);
 }
 
+/* Focus : bleu océan + halo doux */
 .floating-input:focus,
 .floating-input:focus-visible {
   outline: none;
-  border-color: var(--color-primary);
-  /* petit halo accessible, subtil */
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary), white 85%);
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-blue) 25%, white 80%);
 }
 
 /* Disabled / Readonly */
 .floating-input:disabled,
 .floating-input[readonly] {
-  background-color: color-mix(in oklab, var(--color-surface), var(--color-border) 20%);
-  color: color-mix(in oklab, var(--color-text), var(--color-muted) 30%);
+  background-color: color-mix(in oklab, #ffffff 80%, var(--color-sand) 20%);
+  color: color-mix(in oklab, var(--color-dark), var(--color-muted) 40%);
+  border-color: color-mix(in oklab, var(--color-mint) 25%, white);
   cursor: not-allowed;
 }
 
-/* Invalid (depuis prop error) */
+/* Invalid (rouge doux) */
 .floating-input.is-invalid {
   border-color: #dc2626; /* red-600 */
   box-shadow: 0 0 0 3px color-mix(in oklab, #dc2626, white 85%);
@@ -51,38 +57,39 @@
   position: absolute;
   top: 0.5rem;
   left: 0.75rem;
-  font-size: 0.875rem; /* text-sm */
-  color: var(--color-muted);
+  font-size: 0.875rem;
+  color: color-mix(in oklab, var(--color-ocean-dark) 60%, white);
   z-index: 10;
   transform-origin: 0 0;
   transform: translateY(1rem) scale(1);
   transition:
     transform 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
-/* Monte le label quand focus ou quand du contenu est présent */
+/* Monte le label quand focus ou contenu présent */
 .floating-input:focus + .floating-input-label,
 .floating-input:not(:placeholder-shown) + .floating-input-label {
   transform: translateY(-0.6rem) scale(0.82);
-  color: var(--color-primary);
-  background: var(--color-surface);
-  padding: 0 0.2rem; /* petit fond pour lisibilité sur bordures */
+  color: var(--color-blue);
+  background: #ffffff; /* fond clair derrière le label */
+  padding: 0 0.25rem;
 }
 
 /* Texte d’aide / erreur */
 .floating-input-help {
   margin-top: 0.375rem;
-  font-size: 0.8125rem; /* ~ text-sm minus */
-  color: var(--color-muted);
+  font-size: 0.8125rem;
+  color: color-mix(in oklab, var(--color-dark), white 40%);
 }
 .floating-input-help.is-error {
   color: #dc2626;
 }
 
-/* Autofill (Safari/Chrome) pour garder nos couleurs) */
+/* Autofill (Chrome/Safari) */
 .floating-input:-webkit-autofill {
-  -webkit-text-fill-color: var(--color-text);
+  -webkit-text-fill-color: var(--color-dark);
   transition:
     background-color 9999s ease-out,
     color 9999s ease-out;

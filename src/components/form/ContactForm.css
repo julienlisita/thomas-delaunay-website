@@ -1,7 +1,7 @@
 /* src/components/form/FloatingInput.css */
 
 .contact-form {
-  @apply space-y-6;
-  background-color: sand;
-  color: var(--color-text); /* texte de base */
+  @apply space-y-6 rounded-xl shadow-lg p-6;
+  background-color: #fff;
+  border: 1px solid color-mix(in oklab, var(--color-mint) 40%, white);
 }
