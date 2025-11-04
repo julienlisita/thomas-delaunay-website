@@ -13,7 +13,7 @@ import Media from '@/components/ui/Media';
 export default function Mission() {
   return (
     <Section bgColor="sand">
-      <SectionWrapper className="max-w-6xl mx-auto">
+      <SectionWrapper>
         <HeaderBlock eyebrow="MISSION" title="Ma mission" />
 
         <Split className="mt-4">

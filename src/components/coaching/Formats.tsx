@@ -50,7 +50,7 @@ export default function Formats() {
           align="center"
         />
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <Lead className="text-center mb-10">
             Que vous commenciez tout juste ou que vous visiez une performance précise, les séances
             s’adaptent à votre contexte : chez vous, en plein air ou à distance.
@@ -59,7 +59,7 @@ export default function Formats() {
 
         {/* Media list avec miniatures réelles à gauche */}
         <ul
-          className="max-w-4xl mx-auto divide-y divide-ocean-light/50"
+          className="max-w-3xl mx-auto divide-y divide-ocean-light/50"
           aria-label="Modalités de déroulement des séances"
         >
           {formats.map(({ icon: Icon, title, text, location, image }) => (

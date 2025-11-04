@@ -24,7 +24,7 @@ export default function ValuesSection({ className }: Props) {
           align="center"
         />
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <Lead className="text-center mb-8">
             Que vous commenciez tout juste ou que vous visiez une performance précise, je vous
             propose trois niveaux d’accompagnement pour progresser sans vous perdre dans la

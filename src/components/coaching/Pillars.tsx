@@ -26,7 +26,7 @@ export default function Pillars() {
       <SectionWrapper>
         <HeaderBlock eyebrow="MÉTHODE" title="Les 4 piliers de ma méthode" align="center" />
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <Lead className="text-center mb-12">
             Ces piliers guident chaque étape de votre accompagnement : comprendre, planifier,
             progresser et ancrer des habitudes qui tiennent dans la vraie vie.

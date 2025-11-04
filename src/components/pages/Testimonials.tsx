@@ -19,6 +19,7 @@ export default function TestimonialsPageView() {
       />
       <TestimonialsSectionServer />
       <CaseHighlight
+        eyebrow="HISTOIRE DE RÉUSSITE"
         title="Reprendre confiance après 2 ans d’arrêt"
         name="Sophie"
         age={52}

@@ -38,10 +38,12 @@ export default function FollowUp() {
       <SectionWrapper>
         <HeaderBlock eyebrow="SUIVI" title="Un accompagnement sur la durée" />
 
-        <Lead className="text-center mb-10">
-          Le vrai changement se construit dans le temps. Chaque programme inclut un suivi progressif
-          et des échanges réguliers :
-        </Lead>
+        <div className="max-w-4xl mx-auto">
+          <Lead className="text-center mb-10">
+            Le vrai changement se construit dans le temps. Chaque programme inclut un suivi
+            progressif et des échanges réguliers :
+          </Lead>
+        </div>
 
         {/* === Timeline === */}
         <div className="relative max-w-3xl mx-auto">

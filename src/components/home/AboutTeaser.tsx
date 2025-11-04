@@ -8,13 +8,12 @@ import Split from '@/components/patterns/Split';
 import HeaderBlock from '@/components/patterns/HeaderBlock';
 import Lead from '@/components/ui/Lead';
 import ActionsStack from '@/components/patterns/ActionsStack';
-import Prose from '../ui/Prose';
 import Media from '../ui/Media';
 
 export default function AboutTeaser() {
   return (
     <Section>
-      <SectionWrapper className="max-w-6xl mx-auto">
+      <SectionWrapper>
         <HeaderBlock eyebrow="RENCONTRE" title="À propos de Thomas" />
 
         <Split className="mt-4">

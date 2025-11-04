@@ -11,7 +11,7 @@ import Split from '@/components/patterns/Split';
 export default function Nutrition() {
   return (
     <Section bgColor="#EAF5EF">
-      <SectionWrapper className="max-w-6xl mx-auto">
+      <SectionWrapper>
         {/* Header de section */}
         <HeaderBlock
           eyebrow="Focus bien-être"

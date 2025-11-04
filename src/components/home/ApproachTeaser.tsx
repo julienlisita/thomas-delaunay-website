@@ -13,16 +13,18 @@ export default function ApproachTeaser() {
     <Section>
       <SectionWrapper>
         <HeaderBlock
-          eyebrow="PHILOSOPHIE "
+          eyebrow="MON APPROCHE "
           title="Écoute, progression, plaisir du mouvement"
           align="center"
         />
 
-        <Lead className="text-center mb-6">
-          Chaque personne est différente, et chaque corps a son propre rythme. Mon rôle est de vous
-          aider à retrouver équilibre, énergie et confiance, grâce à un accompagnement fondé sur
-          l’écoute, la progression et le plaisir du mouvement.
-        </Lead>
+        <div className="max-w-3xl mx-auto">
+          <Lead className="text-center mb-6">
+            Chaque personne est différente, et chaque corps a son propre rythme. Mon rôle est de
+            vous aider à retrouver équilibre, énergie et confiance, grâce à un accompagnement fondé
+            sur l’écoute, la progression et le plaisir du mouvement.
+          </Lead>
+        </div>
 
         <ActionsStack
           align="center"
