@@ -1,32 +1,36 @@
-// app/metadata.ts
+// src/app/metadata.ts
 
 export const metadata = {
-  title: 'Site Vitrine – Titre de votre entreprise',
+  title: 'Thomas Delaunay Coaching – Bien-être, sport et nutrition à Bordeaux',
   description:
-    'Site vitrine professionnel pour mettre en valeur votre activité. Modèle personnalisable pour indépendants, TPE ou entreprises.',
-  metadataBase: new URL('https://www.exemple.com'),
+    'Coaching sportif personnalisé à Bordeaux et en ligne. Thomas Delaunay vous accompagne pour retrouver forme, équilibre et bien-être grâce à une approche douce et durable, alliant sport et nutrition.',
+  metadataBase: new URL('https://thomas-delaunay-coaching.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Titre de votre entreprise',
-    description: 'Présentez votre entreprise avec un site moderne, clair et responsive.',
-    url: 'https://www.exemple.com',
+    title: 'Thomas Delaunay Coaching – Bien-être, sport et nutrition à Bordeaux',
+    description:
+      'Coaching sportif sur mesure : accompagnement bien-être, remise en forme, nutrition et équilibre du corps et de l’esprit, à Bordeaux ou à distance.',
+    url: 'https://thomas-delaunay-coaching.vercel.app',
+    siteName: 'Thomas Delaunay Coaching',
     type: 'website',
+    locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.exemple.com/og-image.jpg',
+        url: 'https://thomas-delaunay-coaching.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Titre de votre entreprise',
+        alt: 'Thomas Delaunay Coaching – sport, nutrition et bien-être à Bordeaux',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Titre de votre entreprise',
-    description: 'Site vitrine professionnel pour votre activité.',
-    images: ['https://www.exemple.com/og-image.jpg'],
+    title: 'Thomas Delaunay Coaching',
+    description:
+      'Coach sportif et bien-être à Bordeaux. Programmes personnalisés de remise en forme, nutrition et équilibre du corps et du mental.',
+    images: ['https://thomas-delaunay-coaching.vercel.app/og-image.jpg'],
   },
   icons: {
     icon: [
@@ -39,5 +43,6 @@ export const metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
+    title: 'Thomas Delaunay Coaching',
   },
 };
