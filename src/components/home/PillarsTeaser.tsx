@@ -33,7 +33,7 @@ export default function PillarsTeaser() {
               title={item.title}
               description={item.description}
               variant="default"
-              tone="brand"
+              tone="calm-contrast"
               align="center"
             />
           )}

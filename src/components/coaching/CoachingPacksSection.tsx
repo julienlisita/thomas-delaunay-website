@@ -40,8 +40,7 @@ export default function CoachingPacksSection({ className }: Props) {
               icon={item.icon}
               title={item.title}
               description={item.description}
-              variant="outlined"
-              tone="neutral"
+              tone="brand"
               align="center"
             />
           )}

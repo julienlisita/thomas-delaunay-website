@@ -20,6 +20,8 @@
   --card-gradient-start: var(--color-blue);
   --card-gradient-end: var(--color-coral);
   --card-gradient-fg: #ffffff;
+
+  box-shadow: var(--card-shadow-sm);
 }
 
 /* Brand = duo bleu/corail, accentué (pour packs, éléments clés) */
@@ -27,7 +29,7 @@
   --card-bg: #ffffff; /* surface plus "clean" pour le contraste */
   --card-text: var(--color-dark);
   --card-title: var(--color-heading);
-  --card-border: var(--color-light);
+  --card-border: color-mix(in oklab, var(--color-blue) 35%, white);
   --card-icon-fg: var(--color-blue);
 
   /* Header (with-header) */
@@ -38,51 +40,129 @@
   --card-gradient-start: var(--color-blue);
   --card-gradient-end: var(--color-coral);
   --card-gradient-fg: #ffffff;
+
+  box-shadow: var(--card-shadow-md);
+}
+.feature-card--brand:hover {
+  border-color: color-mix(in oklab, var(--color-blue) 65%, white);
+  box-shadow: var(--card-shadow-lg);
+  transform: translateY(-2px);
 }
 
-/* Success = ambiance apaisée (mint + blue), lisible sur fond clair */
-.feature-card--success {
-  --card-bg: var(--color-sand);
+.feature-card--calm {
+  --card-bg: color-mix(in oklab, var(--color-mint) 15%, white);
   --card-text: var(--color-dark);
   --card-title: var(--color-heading);
-  --card-border: color-mix(in oklab, var(--color-mint) 55%, white);
-  --card-icon-fg: var(--color-blue);
+  --card-border: color-mix(in oklab, var(--color-mint) 45%, white);
+  --card-icon-fg: var(--color-mint);
 
-  --card-header-bg: linear-gradient(135deg, var(--color-mint), var(--color-blue));
+  --card-header-bg: linear-gradient(135deg, var(--color-sand), var(--color-mint));
   --card-header-fg: var(--color-night);
 
   --card-gradient-start: var(--color-mint);
-  --card-gradient-end: var(--color-blue);
+  --card-gradient-end: var(--color-sand);
   --card-gradient-fg: var(--color-night);
+
+  box-shadow: var(--card-shadow-sm);
 }
 
-/* Warning/Highlight = corail proéminent (pour mise en avant douce) */
-.feature-card--warning {
-  --card-bg: #ffffff;
+/* Calm-contrast = version adaptée au fond bleu clair (#E4EBF0) */
+.feature-card--calm-contrast {
+  --card-bg: #ffffff; /* fond pur pour trancher visuellement */
+  --card-text: var(--color-ocean-dark);
+  --card-title: var(--color-heading);
+  --card-border: color-mix(in oklab, var(--color-mint) 40%, white);
+  --card-icon-fg: var(--color-mint);
+
+  box-shadow: var(--card-shadow-sm);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.15s ease,
+    background-color 0.2s ease;
+}
+
+.feature-card--calm-contrast:hover {
+  background-color: color-mix(in oklab, var(--color-mint) 15%, white);
+  border-color: color-mix(in oklab, var(--color-mint) 55%, white);
+  box-shadow: var(--card-shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Trust = chaleur et fiabilité (pour contact, témoignages, réassurance) */
+.feature-card--trust {
+  --card-bg: #ffffff; /* carte claire sur fond sable */
   --card-text: var(--color-dark);
   --card-title: var(--color-heading);
-  --card-border: color-mix(in oklab, var(--color-coral) 40%, white);
-  --card-icon-fg: var(--color-coral);
+  --card-border: color-mix(
+    in oklab,
+    var(--color-coral) 25%,
+    var(--color-sand)
+  ); /* bordure douce, ton chaud */
+  --card-icon-fg: var(--color-coral); /* accent visuel et cohérence avec CTA */
 
-  --card-header-bg: var(--color-coral); /* plein pour le header */
+  --card-header-bg: linear-gradient(
+    135deg,
+    var(--color-coral),
+    var(--color-mint)
+  ); /* gradient léger et humain */
   --card-header-fg: #ffffff;
 
   --card-gradient-start: var(--color-coral);
-  --card-gradient-end: color-mix(in oklab, var(--color-coral) 80%, white);
+  --card-gradient-end: var(--color-mint);
   --card-gradient-fg: #ffffff;
+
+  box-shadow: var(--card-shadow-md);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.15s ease,
+    background-color 0.2s ease;
+}
+
+.feature-card--trust:hover {
+  background-color: #fffaf7; /* corail très clair au hover */
+  box-shadow: var(--card-shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Ice = carte "verre givré" pour fonds image/bleu clair (Pillars) */
+.feature-card--ice {
+  /* Surface translucide + flou de fond */
+  --card-bg: color-mix(in oklab, white 30%, transparent);
+  --card-text: var(--color-ocean-dark);
+  --card-title: var(--color-heading);
+  --card-border: color-mix(in oklab, white 20%, transparent);
+  --card-icon-fg: var(--color-blue);
+
+  /* header/gradient pas indispensables ici, on reste épuré */
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* relief discret, plus fort au hover */
+  box-shadow: var(--card-shadow-sm);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.feature-card--ice:hover {
+  /* un soupçon plus opaque pour survol */
+  background-color: color-mix(in oklab, white 40%, transparent);
+  box-shadow: var(--card-shadow-md);
+  transform: translateY(-2px);
+  /* bordure légèrement plus lisible au hover */
+  border-color: color-mix(in oklab, white 28%, transparent);
 }
 
 /* Base card */
 .feature-card {
   @apply transition overflow-hidden;
   border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   color: var(--card-text);
-}
-.feature-card:hover {
-  box-shadow: var(--card-shadow-hover);
 }
 
 /* Variantes */

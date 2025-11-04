@@ -37,7 +37,7 @@ export default function PacksTeaser() {
               title={item.title}
               description={item.description}
               variant="default"
-              tone="neutral"
+              tone="brand"
               align="center"
             />
           )}

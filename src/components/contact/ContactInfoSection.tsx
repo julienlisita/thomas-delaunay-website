@@ -15,7 +15,7 @@ type Props = {
 
 export default function ContactInfoSection({ className }: Props) {
   return (
-    <Section>
+    <Section bgColor="sand-light">
       <SectionWrapper>
         <HeaderBlock
           eyebrow="Packs & accompagnements"
@@ -30,8 +30,7 @@ export default function ContactInfoSection({ className }: Props) {
               icon={item.icon}
               title={item.title}
               description={item.description}
-              variant="default"
-              tone="warning"
+              tone="trust"
               align="center"
             />
           )}

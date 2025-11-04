@@ -9,7 +9,7 @@ import Button from '../ui/Button';
 
 type Align = 'inherit' | 'left' | 'center' | 'right';
 type Variant = 'default' | 'gradient' | 'outlined' | 'with-header';
-type Tone = 'neutral' | 'brand' | 'success' | 'warning';
+type Tone = 'neutral' | 'brand' | 'calm' | 'calm-contrast' | 'trust' | 'ice';
 
 type StyleVars = React.CSSProperties & {
   // autoriser les custom properties CSS (design tokens)

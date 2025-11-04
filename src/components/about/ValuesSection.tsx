@@ -39,8 +39,7 @@ export default function ValuesSection({ className }: Props) {
               icon={item.icon}
               title={item.title}
               description={item.description}
-              variant="outlined"
-              tone="neutral"
+              tone="calm"
               align="center"
             />
           )}

@@ -12,6 +12,7 @@
   --color-coral: #f37b63; /* coral - warmth, human energy */
   --color-night: #1c2a38; /* night blue - strong contrast */
   --color-light: #e4ebf0; /* pale blue-grey - soft surfaces */
+  --color-sand-light: color-mix(in oklab, var(--color-sand) 60%, white);
 
   /* Functional tokens */
   --color-primary: var(--color-coral); /* Main accent color (CTAs, links, hover states) */
@@ -118,6 +119,15 @@
   /* Icônes */
   --card-icon-size: 2.5rem; /* w-10 h-10 */
   --card-icon-fg: var(--color-blue);
+
+  /* 🌫️ Shadows – niveaux hiérarchisés */
+  --card-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.04);
+  --card-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --card-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --card-shadow-xl: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  /* Hover intensifié */
+  --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 @media (min-width: 640px) {
