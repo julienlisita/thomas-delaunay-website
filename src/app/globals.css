@@ -31,7 +31,7 @@
   --color-header-bg-blur: blur(6px); /* backdrop blur for “glass” effect */
   --color-header-text: var(--color-dark); /* main text color */
   --color-header-hover: var(--color-blue); /* link hover */
-  --color-header-active: var(--color-coral); /* current page underline or active state */
+  --color-header-active: var(--color-blue); /* current page underline or active state */
   --color-header-border: rgba(46, 64, 87, 0.08); /* thin subtle border line (optional) */
   --color-header-icon: var(--color-dark); /* burger/menu icons */
   --color-header-mobile-hover: var(--color-light); /* background for mobile links hover */
