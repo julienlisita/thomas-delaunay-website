@@ -8,8 +8,8 @@ export const contactInfos: ReadonlyArray<FeatureItem> = [
     icon: Phone,
     title: 'Téléphone',
     description: (
-      <a href="tel:+33645872319" className="underline hover:no-underline">
-        06 45 87 23 19
+      <a href="tel:+33652489317" className="underline hover:no-underline">
+        06 52 48 93 17
       </a>
     ),
   },
@@ -17,8 +17,8 @@ export const contactInfos: ReadonlyArray<FeatureItem> = [
     icon: Mail,
     title: 'Email',
     description: (
-      <a href="mailto:contact@thomasdelaunaycoaching.fr " className="underline hover:no-underline">
-        contact@thomasdelaunaycoaching.fr
+      <a href="mailto:contact@thomasdelaunay-coaching.fr " className="underline hover:no-underline">
+        contact@thomasdelaunay-coaching.fr
       </a>
     ),
   },
@@ -27,13 +27,13 @@ export const contactInfos: ReadonlyArray<FeatureItem> = [
     title: 'Adresse',
     description: (
       <a
-        href="https://www.google.com/maps/search/?api=1&query=12 rue Exemple, 75000 Paris"
+        href="https://maps.app.goo.gl/BCJxcrFgxRRiQH2F8"
         target="_blank"
         rel="noopener noreferrer"
         className="underline hover:no-underline"
       >
-        12 rue des Frênes <br />
-        33000 Bordeaux – France
+        12 Rue des Acacias, <br />
+        33600 Pessac - France
       </a>
     ),
   },

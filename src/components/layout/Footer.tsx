@@ -62,7 +62,7 @@ export default function Footer() {
               contact@thomasdelaunay-coaching.fr
             </a>
           </p>
-          <p className="footer-contact-item">📞 06 00 00 00 00</p>
+          <p className="footer-contact-item">📞 06 52 48 93 17</p>
 
           <div className="footer-socials">
             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
