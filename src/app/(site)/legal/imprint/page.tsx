@@ -1,4 +1,4 @@
-// src/app/legal/imprint/page.tsx
+// src/app/(site)/legal/imprint/page.tsx
 
 import Imprint from '@/components/pages/legal/Imprint';
 

@@ -1,4 +1,4 @@
-// src/app/testimonials/page.tsx
+// src/app/(site)/testimonials/page.tsx
 
 import Testimonials from '@/components/pages/Testimonials';
 

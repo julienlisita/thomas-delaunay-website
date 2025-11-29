@@ -1,4 +1,4 @@
-// src/app/coaching/page.tsx
+// src/app/(site)/coaching/page.tsx
 
 import Coaching from '@/components/pages/Coaching';
 

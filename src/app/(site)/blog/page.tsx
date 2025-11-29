@@ -1,4 +1,4 @@
-// src/app/blog/page.tsx
+// src/app/(site)/blog/page.tsx
 
 import Blog from '@/components/pages/Blog';
 

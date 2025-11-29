@@ -1,4 +1,4 @@
-// src/app/thank-you/page.tsx
+// src/app/(site)/thank-you/page.tsx
 
 import Button from '@/components/ui/Button';
 

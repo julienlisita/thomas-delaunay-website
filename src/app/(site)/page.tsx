@@ -1,4 +1,4 @@
-// src/app/page.tsx
+// src/app/(site)/page.tsx
 
 import Home from '@/components/pages/Home';
 

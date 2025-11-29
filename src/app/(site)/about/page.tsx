@@ -1,4 +1,4 @@
-// src/app/about/page.tsx
+// src/app/(site)/about/page.tsx
 
 import About from '@/components/pages/About';
 

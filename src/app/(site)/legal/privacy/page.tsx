@@ -1,4 +1,4 @@
-// src/app/legal/privacy/page.tsx
+// src/app/(site)/legal/privacy/page.tsx
 
 import Privacy from '@/components/pages/legal/Policy';
 
