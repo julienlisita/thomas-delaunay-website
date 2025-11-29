@@ -83,6 +83,9 @@ export default function Footer() {
         <nav className="footer-legal">
           <Link href="/legal/imprint">Mentions légales</Link>
           <Link href="/legal/privacy">Politique de confidentialité</Link>
+          <Link href="/admin" className="footer-admin-link">
+            Espace admin
+          </Link>
         </nav>
       </div>
     </footer>

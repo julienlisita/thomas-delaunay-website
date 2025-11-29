@@ -110,3 +110,13 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.footer-admin-link {
+  font-size: 0.75rem; /* plus petit */
+  opacity: 0.7;
+}
+
+.footer-admin-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

@@ -38,7 +38,7 @@ export default function ReservationFormSection({ slots }: ReservationFormSection
 
             <p className="text-sm text-neutral-700">
               Pour toute question ou modification, vous pouvez écrire à&nbsp;
-              <strong>julien.lisita@gmail.com</strong>.
+              <strong>contact@thomasdelaunay-coaching.fr</strong>.
             </p>
           </aside>
         </div>
