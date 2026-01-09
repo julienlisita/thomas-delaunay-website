@@ -20,16 +20,22 @@ type ReservationFormProps = {
 
 // --- Helpers date/time (local timezone) ---
 function toDateKey(d: Date) {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
+  const parts = new Intl.DateTimeFormat('fr-FR', {
+    timeZone: 'Europe/Paris',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(d);
+
+  const get = (type: string) => parts.find((p) => p.type === type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
 }
 
 function formatDayTitle(dateKey: string) {
   const [y, m, d] = dateKey.split('-').map(Number);
-  const dt = new Date(y, m - 1, d);
+  const dt = new Date(Date.UTC(y, m - 1, d));
   return new Intl.DateTimeFormat('fr-FR', {
+    timeZone: 'Europe/Paris',
     weekday: 'long',
     day: '2-digit',
     month: 'long',
@@ -37,12 +43,26 @@ function formatDayTitle(dateKey: string) {
 }
 
 function formatTime(d: Date) {
-  return new Intl.DateTimeFormat('fr-FR', { hour: '2-digit', minute: '2-digit' }).format(d);
+  return new Intl.DateTimeFormat('fr-FR', {
+    timeZone: 'Europe/Paris',
+    hour: '2-digit',
+    minute: '2-digit',
+  }).format(d);
 }
 
 function isMorning(slot: ReservationSlot) {
-  const start = new Date(slot.startAt);
-  return start.getHours() < 12;
+  const d = new Date(slot.startAt);
+
+  const parts = new Intl.DateTimeFormat('fr-FR', {
+    timeZone: 'Europe/Paris',
+    hour: '2-digit',
+    hour12: false,
+  }).formatToParts(d);
+
+  const hourStr = parts.find((p) => p.type === 'hour')?.value ?? '0';
+  const hour = parseInt(hourStr, 10);
+
+  return hour < 12;
 }
 
 export default function ReservationForm({
